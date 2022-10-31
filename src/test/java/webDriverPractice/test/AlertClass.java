@@ -9,12 +9,13 @@ import webDriverPractice.initialization.InitialComponents;
 public class AlertClass {
 	WebDriver driver;
 	Actions action;
+
 	@BeforeClass
 	public void initialSetup() {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
 		driver.get("https://www.amazon.com/");
-		 action = new Actions(driver);
+		action = new Actions(driver);
 	}
 
 }
