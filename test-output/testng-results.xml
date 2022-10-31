@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-31T04:01:50 EDT" name="Default suite" finished-at="2022-10-31T04:01:50 EDT" duration-ms="661">
+  <suite started-at="2022-10-31T07:21:32 EDT" name="Default suite" finished-at="2022-10-31T07:21:43 EDT" duration-ms="11342">
     <groups>
     </groups>
-    <test started-at="2022-10-31T04:01:50 EDT" name="Default test" finished-at="2022-10-31T04:01:50 EDT" duration-ms="661">
-      <class name="webDriverPractice.test.ReadExcelData">
-        <test-method is-config="true" signature="setup()[pri:0, instance:webDriverPractice.test.ReadExcelData@291ae]" started-at="2022-10-31T04:01:50 EDT" name="setup" finished-at="2022-10-31T04:01:50 EDT" duration-ms="612" status="PASS">
+    <test started-at="2022-10-31T07:21:32 EDT" name="Default test" finished-at="2022-10-31T07:21:43 EDT" duration-ms="11342">
+      <class name="webDriverPractice.test.AlertClass">
+        <test-method is-config="true" signature="initialSetup()[pri:0, instance:webDriverPractice.test.AlertClass@6a192cfe]" started-at="2022-10-31T07:21:32 EDT" name="initialSetup" finished-at="2022-10-31T07:21:36 EDT" duration-ms="3869" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="readData()[pri:0, instance:webDriverPractice.test.ReadExcelData@291ae]" started-at="2022-10-31T04:01:50 EDT" name="readData" finished-at="2022-10-31T04:01:50 EDT" duration-ms="10" status="PASS">
+        </test-method> <!-- initialSetup -->
+        <test-method signature="alertClassTest()[pri:0, instance:webDriverPractice.test.AlertClass@6a192cfe]" started-at="2022-10-31T07:21:36 EDT" name="alertClassTest" finished-at="2022-10-31T07:21:43 EDT" duration-ms="7441" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readData -->
-      </class> <!-- webDriverPractice.test.ReadExcelData -->
+        </test-method> <!-- alertClassTest -->
+      </class> <!-- webDriverPractice.test.AlertClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
