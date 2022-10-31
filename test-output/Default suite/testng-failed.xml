@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.ReadExcelData">
+      <class name="webDriverPractice.test.SecurityCertification">
         <methods>
-          <include name="readData"/>
-          <include name="setup"/>
+          <include name="desiredCapabilitiesTest"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- webDriverPractice.test.ReadExcelData -->
+      </class> <!-- webDriverPractice.test.SecurityCertification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
