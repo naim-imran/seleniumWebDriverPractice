@@ -25,7 +25,8 @@ public class Locators {
 
 	@BeforeMethod
 	public void setupInitialComponents() {
-		driver = InitialComponents.launchBrowser();
+		InitialComponents initialComponents = new InitialComponents();
+		driver = initialComponents.launchBrowser();
 		driver.get("https://www.ebay.com/");
 	}
 
