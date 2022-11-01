@@ -13,9 +13,14 @@ public class ParentChildRelationInXpath {
 		driver = initialComponents.launchBrowser();
         
     }
+    
+    //In XPath parent-child relationship is used to traverse from parent to child
+    //node or child to parent node using different methods like parent:: ,
+    //following-sibling:: ,  ancestor:: , preceding sibling:: , descendant:: .
 
     @Test
     public void parentToChildTest(){
+    	
 
     }
 }
