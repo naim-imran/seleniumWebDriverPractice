@@ -1,227 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-01T04:26:31 EDT" name="Default suite" finished-at="2022-11-01T04:27:26 EDT" duration-ms="55283">
+  <suite started-at="2023-02-28T16:26:04 EST" name="Default suite" finished-at="2023-02-28T16:26:15 EST" duration-ms="11170">
     <groups>
     </groups>
-    <test started-at="2022-11-01T04:26:31 EDT" name="Default test" finished-at="2022-11-01T04:27:26 EDT" duration-ms="55283">
-      <class name="webDriverPractice.test.Locators">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:31 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:26:35 EDT" duration-ms="4302" status="PASS">
+    <test started-at="2023-02-28T16:26:04 EST" name="Default test" finished-at="2023-02-28T16:26:15 EST" duration-ms="11170">
+      <class name="webDriverPractice.test.R0001Locators">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001Locators@4686afc2]" started-at="2023-02-28T16:26:04 EST" name="setupInitialComponents" finished-at="2023-02-28T16:26:10 EST" duration-ms="6051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="className_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:35 EDT" name="className_LocatorTest" finished-at="2022-11-01T04:26:35 EDT" duration-ms="7" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[Compound class names not permitted
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.5.2', revision: '702c64f787c'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '17.0.4.1'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.5.2', revision: '702c64f787c'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '17.0.4.1'
-Driver info: driver.version: unknown
-at org.openqa.selenium.By$ByClassName.<init>(By.java:310)
-at org.openqa.selenium.By.className(By.java:100)
-at webDriverPractice.test.Locators.className_LocatorTest(Locators.java:59)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method signature="relativeLocator_above()[pri:0, instance:webDriverPractice.test.R0001Locators@4686afc2]" started-at="2023-02-28T16:26:10 EST" name="relativeLocator_above" description="TC009 click on &quot;sign in&quot; link button using relative locator above" finished-at="2023-02-28T16:26:11 EST" duration-ms="1772" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- className_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:35 EDT" name="quitBrowser" finished-at="2022-11-01T04:26:38 EDT" duration-ms="3183" status="PASS">
+        </test-method> <!-- relativeLocator_above -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001Locators@4686afc2]" started-at="2023-02-28T16:26:11 EST" name="quitBrowser" finished-at="2023-02-28T16:26:15 EST" duration-ms="3270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:38 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:26:41 EDT" duration-ms="2935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="cssSelector_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:41 EDT" name="cssSelector_LocatorTest" finished-at="2022-11-01T04:26:42 EDT" duration-ms="882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cssSelector_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:42 EDT" name="quitBrowser" finished-at="2022-11-01T04:26:45 EDT" duration-ms="3178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:45 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:26:48 EDT" duration-ms="2941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="id_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:48 EDT" name="id_LocatorTest" finished-at="2022-11-01T04:26:48 EDT" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- id_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:48 EDT" name="quitBrowser" finished-at="2022-11-01T04:26:52 EDT" duration-ms="3163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:52 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:26:54 EDT" duration-ms="2929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="linkText_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:54 EDT" name="linkText_LocatorTest" finished-at="2022-11-01T04:26:55 EDT" duration-ms="159" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Featured"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.2', revision: '702c64f787c'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93796803c149abfcc40c89f0eb371d96, findElement {using=link text, value=Featured}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/gf/gthvsq1n1rz...}, goog:chromeOptions: {debuggerAddress: localhost:65064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65064/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93796803c149abfcc40c89f0eb371d96]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Featured"}
-  (Session info: chrome=107.0.5304.62)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.2', revision: '702c64f787c'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93796803c149abfcc40c89f0eb371d96, findElement {using=link text, value=Featured}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/gf/gthvsq1n1rz...}, goog:chromeOptions: {debuggerAddress: localhost:65064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65064/devtoo..., se:cdpVersion: 107.0.5304.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93796803c149abfcc40c89f0eb371d96
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at webDriverPractice.test.Locators.linkText_LocatorTest(Locators.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkText_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:55 EDT" name="quitBrowser" finished-at="2022-11-01T04:26:58 EDT" duration-ms="3529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:26:58 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:27:01 EDT" duration-ms="3052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="name_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:01 EDT" name="name_LocatorTest" finished-at="2022-11-01T04:27:01 EDT" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- name_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:01 EDT" name="quitBrowser" finished-at="2022-11-01T04:27:05 EDT" duration-ms="3794" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:05 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:27:08 EDT" duration-ms="2989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="partialLinkText_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:08 EDT" name="partialLinkText_LocatorTest" finished-at="2022-11-01T04:27:10 EDT" duration-ms="2052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- partialLinkText_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:10 EDT" name="quitBrowser" finished-at="2022-11-01T04:27:13 EDT" duration-ms="3170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:13 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:27:16 EDT" duration-ms="2930" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="tagName_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:16 EDT" name="tagName_LocatorTest" finished-at="2022-11-01T04:27:16 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tagName_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:16 EDT" name="quitBrowser" finished-at="2022-11-01T04:27:19 EDT" duration-ms="3183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:19 EDT" name="setupInitialComponents" finished-at="2022-11-01T04:27:22 EDT" duration-ms="2954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="xpath_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:22 EDT" name="xpath_LocatorTest" finished-at="2022-11-01T04:27:23 EDT" duration-ms="565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xpath_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@31c88ec8]" started-at="2022-11-01T04:27:23 EDT" name="quitBrowser" finished-at="2022-11-01T04:27:26 EDT" duration-ms="3220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- webDriverPractice.test.Locators -->
+      </class> <!-- webDriverPractice.test.R0001Locators -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

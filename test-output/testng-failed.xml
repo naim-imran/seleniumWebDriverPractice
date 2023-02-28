@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.Locators">
+      <class name="webDriverPractice.test.R0001Locators">
         <methods>
-          <include name="className_LocatorTest"/>
-          <include name="linkText_LocatorTest"/>
-          <include name="quitBrowser"/>
           <include name="setupInitialComponents"/>
+          <include name="relativeLocator_above"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- webDriverPractice.test.Locators -->
+      </class> <!-- webDriverPractice.test.R0001Locators -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import webDriverPractice.initialization.InitialComponents;
 
-public class ParentChildRelationInXpath {
+public class R0002ParentChildRelationInXpath {
     WebDriver driver;
     @BeforeMethod
     public void setupInitialComponent(){
