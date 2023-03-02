@@ -26,14 +26,14 @@ public class R0002RelativeXpath {
 
     }
     
-    @Test(description = "traversing from parent to child node using( child:: ) ")
+    @Test(description = "traversing from parent to child node using( ForwardSlash ) ")
     public void parentToChildTestUsingForwardSlash(){
 		driver.findElement(By.xpath("//div[@id='gh-ac-box2']/input[@id='gh-ac']")).sendKeys("laptops");
 
     }
     
     @AfterMethod
-    public void quitQriver() throws InterruptedException {
+    public void quitDriver() throws InterruptedException {
     	Thread.sleep(3000);
     	driver.quit();
     }
