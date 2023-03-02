@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0001Locators">
+      <class name="webDriverPractice.test.R0002RelativeXpath">
         <methods>
-          <include name="setupInitialComponents"/>
-          <include name="relativeLocator_above"/>
-          <include name="quitBrowser"/>
+          <include name="setupInitialComponent"/>
+          <include name="parentToChildTest"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0001Locators -->
+      </class> <!-- webDriverPractice.test.R0002RelativeXpath -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

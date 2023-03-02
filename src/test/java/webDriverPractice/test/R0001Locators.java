@@ -51,11 +51,33 @@ public class R0001Locators {
 	
 	@Test(description = "TC004 type \"laptops\" in search textbox by xpath")
 	public void xpath_LocatorTest() {
+		/*
+		 * Relative XPath syntax: 
+								//tagName[@attributeName=’attribute value’]
+		Double forward slash then tag name then inside the square bracket @ then attribute name = and then within a single quotation attribute value. For tag and attribute, we can use a regular expression.
+
+		 */
 		driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("laptops");
 	}
 	
 	@Test(description = "TC005 type \"mobile\" in search textbox by cssSelector")
 	public void cssSelector_LocatorTest() {
+		/*
+		 * syntax:  TagName[attribute=’value’] 
+			For attribute ID, we can also write it as tagName#attributeValue
+			input#identifierId
+			we can also skip the tagName
+			#identifierId
+			For attribute class,  syntax is tagName.attributeValue. if the class attribute value has whitespace, replace that with “.”
+			<input class="gNO89b xyz" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjlpbOlyJj5AhWHM1kFHdEkDEAQ4dUDCA0">
+			
+			Syntax        attributeName.attributeValue
+			Input.gN089b.xyz
+			or
+			Syntax        .attributeValue
+			.gN089b.xyz
+
+		 */
 		driver.findElement(By.cssSelector("input[id='gh-ac']")).sendKeys("mobile");
 	}
 	
