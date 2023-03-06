@@ -5,8 +5,9 @@
     <classes>
       <class name="webDriverPractice.test.R0002RelativeXpath">
         <methods>
+          <include name="quitDriver"/>
+          <include name="TestUsingContainsMethodWithxpath"/>
           <include name="setupInitialComponent"/>
-          <include name="parentToChildTest"/>
         </methods>
       </class> <!-- webDriverPractice.test.R0002RelativeXpath -->
     </classes>
