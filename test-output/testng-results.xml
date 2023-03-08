@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T02:25:24 EST" name="Default suite" finished-at="2023-03-07T02:25:37 EST" duration-ms="12424">
+  <suite started-at="2023-03-08T03:04:40 EST" name="Default suite" finished-at="2023-03-08T03:05:00 EST" duration-ms="20821">
     <groups>
     </groups>
-    <test started-at="2023-03-07T02:25:24 EST" name="Default test" finished-at="2023-03-07T02:25:37 EST" duration-ms="12424">
-      <class name="webDriverPractice.test.R0002RelativeXpath">
-        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.R0002RelativeXpath@4d5650ae]" started-at="2023-03-07T02:25:24 EST" name="setupInitialComponent" finished-at="2023-03-07T02:25:31 EST" duration-ms="6701" status="PASS">
+    <test started-at="2023-03-08T03:04:40 EST" name="Default test" finished-at="2023-03-08T03:05:00 EST" duration-ms="20821">
+      <class name="webDriverPractice.test.R0004DropDown">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0004DropDown@1ed6388a]" started-at="2023-03-08T03:04:40 EST" name="setupInitialComponents" finished-at="2023-03-08T03:04:45 EST" duration-ms="5490" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupInitialComponent -->
-        <test-method signature="testUsingTextFunctionWithXpath()[pri:0, instance:webDriverPractice.test.R0002RelativeXpath@4d5650ae]" started-at="2023-03-07T02:25:31 EST" name="testUsingTextFunctionWithXpath" description="TC011 locate &quot;Score these trending kicks element&quot; link text using text() method by xpath" finished-at="2023-03-07T02:25:33 EST" duration-ms="2325" status="PASS">
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testDropdownUsingSelectClass()[pri:0, instance:webDriverPractice.test.R0004DropDown@1ed6388a]" started-at="2023-03-08T03:04:45 EST" name="testDropdownUsingSelectClass" description="A004-TC001 select fast from Select Speed Dropdown using Select class" finished-at="2023-03-08T03:04:45 EST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUsingTextFunctionWithXpath -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:webDriverPractice.test.R0002RelativeXpath@4d5650ae]" started-at="2023-03-07T02:25:33 EST" name="quitDriver" finished-at="2023-03-07T02:25:37 EST" duration-ms="3325" status="PASS">
+        </test-method> <!-- testDropdownUsingSelectClass -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0004DropDown@1ed6388a]" started-at="2023-03-08T03:04:45 EST" name="quitBrowser" finished-at="2023-03-08T03:04:50 EST" duration-ms="4306" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- webDriverPractice.test.R0002RelativeXpath -->
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0004DropDown@1ed6388a]" started-at="2023-03-08T03:04:50 EST" name="setupInitialComponents" finished-at="2023-03-08T03:04:53 EST" duration-ms="3300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testDynamicDropDownList()[pri:0, instance:webDriverPractice.test.R0004DropDown@1ed6388a]" started-at="2023-03-08T03:04:53 EST" name="testDynamicDropDownList" description="A004-TC002 select item from &quot;Search Box&quot; dynamic dropdown list" finished-at="2023-03-08T03:04:57 EST" duration-ms="4113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicDropDownList -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0004DropDown@1ed6388a]" started-at="2023-03-08T03:04:57 EST" name="quitBrowser" finished-at="2023-03-08T03:05:00 EST" duration-ms="3255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0004DropDown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

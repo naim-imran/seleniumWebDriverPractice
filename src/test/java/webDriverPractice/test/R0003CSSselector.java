@@ -33,7 +33,8 @@ public class R0003CSSselector {
 	}
 	
 	
-	@Test(description = "locate element using partial text of an attribute value using regular expression by CssSelector")
+	@Test(description = "TC015 locate \"search\" using partial text of an attribute value using"
+			+ " regular expression by CssSelector")
 	public void testCssSelectorWithPartialText() {
 		driver.findElement(By.cssSelector("input[class*='autocomplete-input']")).sendKeys("laptops");
 	}

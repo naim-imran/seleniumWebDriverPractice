@@ -1,24 +1,35 @@
 package webDriverPractice.test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import webDriverPractice.initialization.InitialComponents;
 
-public class AlertClass {
+public class R0006AlertClass {
 	WebDriver driver;
-	Actions action;
 
-	@BeforeClass
-	public void initialSetup() {
-		InitialComponents initialcomponent = new InitialComponents();
-		driver = initialcomponent.launchBrowser();
+	@BeforeMethod
+	public void setupInitialComponents() throws InterruptedException {
+		InitialComponents initialComponents = new InitialComponents();
+		driver = initialComponents.launchBrowser();
 		driver.get("http://demo.guru99.com/V1/index.php");
-		driver.manage().window().maximize();
+		
+		Thread.sleep(5);
+	}
+	
+	@AfterMethod
+	public void quitBrowser() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		driver.quit();
 	}
 
-	@Test
+	@Test(description = "R0006-TC01 accept window alert")
 	public void alertClassTest() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys("naim");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("12345");
@@ -27,8 +38,6 @@ public class AlertClass {
 
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
-		Thread.sleep(5000L);
-		driver.quit();
 	}
 
 }
