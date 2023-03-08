@@ -60,6 +60,8 @@ public class R0004DropDown {
 				if (text.contains("laptop i5")) {
 					element.click();
 					break;
+					
+					/////
 				}
 				 
 			}
