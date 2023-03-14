@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0008TakeScreenShots">
+      <class name="webDriverPractice.test.R0010ActionsClass">
         <methods>
+          <include name="initialSetup"/>
           <include name="quitBrowser"/>
-          <include name="setupInitialComponents"/>
-          <include name="testTakeScreenShot"/>
+          <include name="TestDragNDrop"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0008TakeScreenShots -->
+      </class> <!-- webDriverPractice.test.R0010ActionsClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

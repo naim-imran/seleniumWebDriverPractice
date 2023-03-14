@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-08T14:54:06 EST" name="Default suite" finished-at="2023-03-08T14:54:15 EST" duration-ms="9729">
+  <suite started-at="2023-03-14T15:06:56 EDT" name="Default suite" finished-at="2023-03-14T15:10:20 EDT" duration-ms="204545">
     <groups>
     </groups>
-    <test started-at="2023-03-08T14:54:06 EST" name="Default test" finished-at="2023-03-08T14:54:15 EST" duration-ms="9729">
-      <class name="webDriverPractice.test.R0008TakeScreenShots">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@5d534f5d]" started-at="2023-03-08T14:54:06 EST" name="setupInitialComponents" finished-at="2023-03-08T14:54:12 EST" duration-ms="5818" status="PASS">
+    <test started-at="2023-03-14T15:06:56 EDT" name="Default test" finished-at="2023-03-14T15:10:20 EDT" duration-ms="204545">
+      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
+        <test-method signature="testBrokenLink()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@3012646b]" started-at="2023-03-14T15:06:56 EDT" name="testBrokenLink" finished-at="2023-03-14T15:10:09 EDT" duration-ms="193579" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@5d534f5d]" started-at="2023-03-08T14:54:12 EST" name="testTakeScreenShot" description="R0008-TC01 take screenShot of ebay Home page" finished-at="2023-03-08T14:54:12 EST" duration-ms="829" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTakeScreenShot -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@5d534f5d]" started-at="2023-03-08T14:54:12 EST" name="quitBrowser" finished-at="2023-03-08T14:54:15 EST" duration-ms="3004" status="PASS">
+        </test-method> <!-- testBrokenLink -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@3012646b]" started-at="2023-03-14T15:10:09 EDT" name="quitBrowser" finished-at="2023-03-14T15:10:20 EDT" duration-ms="10906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- webDriverPractice.test.R0008TakeScreenShots -->
+      </class> <!-- webDriverPractice.test.R0011BrokenLinkVerification -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
