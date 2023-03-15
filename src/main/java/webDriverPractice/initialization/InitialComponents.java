@@ -13,6 +13,9 @@ public class InitialComponents {
 		/*
 		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
 		 */
+		
+		WebDriverManager.firefoxdriver().setup();
+		
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
 		
@@ -20,6 +23,8 @@ public class InitialComponents {
 		driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		return driver;
+		
+		
 
 	}
 

@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import webDriverPractice.initialization.InitialComponents;
 
-public class SecurityCertification {
+public class R0012SecurityCertification {
 	WebDriver driver;
 	DevTools devTools;
 

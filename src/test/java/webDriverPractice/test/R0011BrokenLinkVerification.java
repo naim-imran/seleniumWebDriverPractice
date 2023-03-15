@@ -14,16 +14,16 @@ import org.testng.annotations.Test;
 import webDriverPractice.initialization.InitialComponents;
 
 public class R0011BrokenLinkVerification {
-	private WebDriver driver;
+	WebDriver driver;
 
-	@Test
+	@Test(priority = 1, description = "CareFirst homepage l")
 	public void testBrokenLink() {
 
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
 		driver.get("https://individual.carefirst.com/individuals-families/plans-coverage/medical/medicaid-plans.page");
 		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(10));
-		driver.manage().window().maximize();
+		
 
 		WebElement objIndividual = driver.findElement(By.xpath("//div[@id='leftNav']//a[contains(text(),'Individual & Family Plans')]"));
 		String toolTipText = objIndividual.getAttribute("title");
