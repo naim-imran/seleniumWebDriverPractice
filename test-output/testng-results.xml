@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-15T02:20:49 EDT" name="Default suite" finished-at="2023-03-15T02:21:08 EDT" duration-ms="19359">
+  <suite started-at="2023-03-15T13:26:29 EDT" name="Default suite" finished-at="2023-03-15T13:26:53 EDT" duration-ms="24057">
     <groups>
     </groups>
-    <test started-at="2023-03-15T02:20:49 EDT" name="Default test" finished-at="2023-03-15T02:21:08 EDT" duration-ms="19359">
-      <class name="webDriverPractice.test.SecurityCertification">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:webDriverPractice.test.SecurityCertification@5824a83d]" started-at="2023-03-15T02:20:49 EDT" name="initialize" finished-at="2023-03-15T02:20:55 EDT" duration-ms="6362" status="PASS">
+    <test started-at="2023-03-15T13:26:29 EDT" name="Default test" finished-at="2023-03-15T13:26:53 EDT" duration-ms="24057">
+      <class name="webDriverPractice.test.R0012SecurityCertification">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@5824a83d]" started-at="2023-03-15T13:26:29 EDT" name="initialize" finished-at="2023-03-15T13:26:34 EDT" duration-ms="5440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="devToolsTest()[pri:0, instance:webDriverPractice.test.SecurityCertification@5824a83d]" started-at="2023-03-15T02:20:55 EDT" name="devToolsTest" finished-at="2023-03-15T02:20:58 EDT" duration-ms="2710" status="PASS">
+        <test-method signature="devToolsTest()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@5824a83d]" started-at="2023-03-15T13:26:34 EDT" name="devToolsTest" finished-at="2023-03-15T13:26:42 EDT" duration-ms="8291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- devToolsTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.SecurityCertification@5824a83d]" started-at="2023-03-15T02:20:58 EDT" name="quitBrowser" finished-at="2023-03-15T02:21:08 EDT" duration-ms="10234" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@5824a83d]" started-at="2023-03-15T13:26:42 EDT" name="quitBrowser" finished-at="2023-03-15T13:26:53 EDT" duration-ms="10268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- webDriverPractice.test.SecurityCertification -->
+      </class> <!-- webDriverPractice.test.R0012SecurityCertification -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
