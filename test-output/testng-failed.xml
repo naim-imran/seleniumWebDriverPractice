@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
+      <class name="webDriverPractice.test.JavaScriptExecutor">
         <methods>
+          <include name="testJavaScriptExecutor"/>
           <include name="quitBrowser"/>
-          <include name="testBrokenLink"/>
+          <include name="setupInitialComponents"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0011BrokenLinkVerification -->
+      </class> <!-- webDriverPractice.test.JavaScriptExecutor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

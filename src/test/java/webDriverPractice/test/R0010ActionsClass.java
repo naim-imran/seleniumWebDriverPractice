@@ -36,6 +36,14 @@ public class R0010ActionsClass {
 				.keyDown(Keys.SHIFT).sendKeys("razer blade").build().perform();
 	}
 	
+	@Test(priority = 4, description = "R0010-TC004 Type \"laptop\" in capital in search edit box using \"Keys.chord(\"laptop\")\" ")
+	public void testkeyboardInteraction01() {
+		InitialComponents initialcomponent = new InitialComponents();
+		driver = initialcomponent.launchBrowser();
+		driver.get("https://www.amazon.com/");
+		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys(Keys.SHIFT, Keys.chord("laptop"));
+	}
+	
 	@Test(priority=3, description = "R0010-TC003 drage the Amazon logo to search box")
 	public void TestDragNDrop() {
 		InitialComponents initialcomponent = new InitialComponents();

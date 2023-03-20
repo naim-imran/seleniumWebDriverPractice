@@ -8,22 +8,19 @@ import java.util.Properties;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class PropertiesClass {
+public class R0013PropertiesClass {
 
 	Properties prop;
 
 	@BeforeMethod
 	public void setup() {
 		try {
+			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/webDriverPractice/initialization/config.properties");
 			prop = new Properties();
-			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")
-					+ "/src/main/java/webDriverPractice/initialization/config.properties");
 			prop.load(fs);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -31,10 +28,8 @@ public class PropertiesClass {
 
 	@Test
 	public void propertiesFileTest() {
-
 		System.out.println(prop.getProperty("userName"));
 		System.out.println(prop.getProperty("password"));
-
 	}
 
 }

@@ -24,6 +24,8 @@ import webDriverPractice.initialization.InitialComponents;
  * 
  * *. in selenium version 4 relative locators also added which includes above(), below(), toRightOf() and toLeftOf() methods.
  * 		to use relative locators we have to manually import (org.openqa.selenium.support.locators.RelativeLocator.with(By by))
+ * 
+ * 		we also can find webelement by using javaScriptExecutor
  */
 
 public class R0001Locators {
