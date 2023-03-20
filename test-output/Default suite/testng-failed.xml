@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.JavaScriptExecutor">
+      <class name="webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling">
         <methods>
-          <include name="testJavaScriptExecutor"/>
-          <include name="quitBrowser"/>
           <include name="setupInitialComponents"/>
+          <include name="quitBrowser"/>
+          <include name="testDynamicCalendar"/>
         </methods>
-      </class> <!-- webDriverPractice.test.JavaScriptExecutor -->
+      </class> <!-- webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

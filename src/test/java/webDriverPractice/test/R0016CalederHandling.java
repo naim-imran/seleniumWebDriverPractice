@@ -1,7 +1,5 @@
 package webDriverPractice.test;
 
-import java.util.Iterator;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,16 +33,22 @@ public class R0016CalederHandling {
 		
 		@Test(priority = 1, description = "Select a date from calender")
 		public void testDynamicCalendar() {
+			String expectedMonthName = "April";
+			String day = "19";
 			driver.findElement(By.xpath("//button[@id='d1-btn']")).click();
 			WebElement calender = driver.findElement(By.xpath("//div[@class='uitk-calendar']"));
 			for (WebElement iterator : calender.findElements(By.xpath("//h2[@class='uitk-date-picker-month-name uitk-type-medium']"))) {
-				System.out.println(iterator.getText());
+				String monthName = iterator.getText();
+				System.out.println(monthName);
+				if (monthName.contains(expectedMonthName)) {
+					iterator.findElement(By.xpath("//table[@class='uitk-date-picker-weeks']/child::tbody//button[@data-day='"+day+"']")).click();
+					
+					break;
+				}
 				
 			}
 		}
-		
-		
-		
+			
 		
 	}
 }
