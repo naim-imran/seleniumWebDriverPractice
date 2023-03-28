@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0012SecurityCertification {
+public class R0012_SecurityCertification {
 	WebDriver driver;
 	DevTools devTools;
 

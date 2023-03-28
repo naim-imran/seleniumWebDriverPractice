@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ReadExcelData {
+public class R0017_ReadExcelData {
 	XSSFWorkbook workBook;
 	int numberOfSheets;
 
@@ -41,10 +41,6 @@ public class ReadExcelData {
 						System.out.print(cellIterator.next() + " ");
 						System.out.println(cellIterator.next());
 						System.out.println();
-						
-						
-						
-						
 
 					}
 				}

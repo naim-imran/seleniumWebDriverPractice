@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0016CalederHandling {
+public class R0016_CalederHandling {
 	public class R0015_WebTableHandling {
 		WebDriver driver;
 
@@ -26,29 +26,40 @@ public class R0016CalederHandling {
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
+				
 			}
 
-			driver.quit();
+			//driver.quit();
 		}
 		
-		@Test(priority = 1, description = "Select a date from calender")
-		public void testDynamicCalendar() {
-			String expectedMonthName = "April";
-			String day = "19";
+		public void pickDateExpediaCalender(String expectedDate) throws InterruptedException {
+			driver.findElement(By.xpath("//body")).click();
 			driver.findElement(By.xpath("//button[@id='d1-btn']")).click();
-			WebElement calender = driver.findElement(By.xpath("//div[@class='uitk-calendar']"));
-			for (WebElement iterator : calender.findElements(By.xpath("//h2[@class='uitk-date-picker-month-name uitk-type-medium']"))) {
-				String monthName = iterator.getText();
+			WebElement calender = driver.findElement(By.xpath("//div[@class='uitk-date-picker-menu-months-container']"));
+
+			for (WebElement iterator : calender.findElements(By.xpath("//button[@class='uitk-date-picker-day']"))) {
+				String monthName = iterator.getAttribute("aria-label");
 				System.out.println(monthName);
-				if (monthName.contains(expectedMonthName)) {
-					iterator.findElement(By.xpath("//table[@class='uitk-date-picker-weeks']/child::tbody//button[@data-day='"+day+"']")).click();
-					
-					break;
-				}
+				
+				
+				
+				  if (monthName.equalsIgnoreCase(expectedDate)) {
+					  iterator.click();
+					  break;
+				  
+				  }
+				 
+				 
 				
 			}
 		}
-			
 		
+		@Test(priority = 1, description = "Select a date from calender")
+		public void testDynamicCalendar() throws InterruptedException {
+			pickDateExpediaCalender("Apr 24, 2023");
+			Thread.sleep(2000);
+			pickDateExpediaCalender("May 2, 2023");
+		}
+				
 	}
 }

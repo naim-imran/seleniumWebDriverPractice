@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling">
+      <class name="webDriverPractice.test.R0018_checkBoxHandling">
         <methods>
-          <include name="setupInitialComponents"/>
+          <include name="testRadioButton"/>
           <include name="quitBrowser"/>
-          <include name="testDynamicCalendar"/>
+          <include name="setupInitialComponents"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling -->
+      </class> <!-- webDriverPractice.test.R0018_checkBoxHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

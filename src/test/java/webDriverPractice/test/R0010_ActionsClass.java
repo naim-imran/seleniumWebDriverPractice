@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0010ActionsClass {
+public class R0010_ActionsClass {
 	
 	WebDriver driver;
 	Actions action;

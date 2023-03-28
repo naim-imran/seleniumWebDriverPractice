@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0003CSSselector {
+public class R0003_CSSselector {
 
 	 WebDriver driver;
 

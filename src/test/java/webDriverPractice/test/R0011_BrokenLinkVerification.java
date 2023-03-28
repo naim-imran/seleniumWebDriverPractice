@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0011BrokenLinkVerification {
+public class R0011_BrokenLinkVerification {
 	WebDriver driver;
 
 	@Test(priority = 1, description = "CareFirst homepage l")

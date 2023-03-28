@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0002RelativeXpath {
+public class R0002_RelativeXpath {
     WebDriver driver;
     @BeforeMethod
     public void setupInitialComponent(){
@@ -51,7 +51,8 @@ public class R0002RelativeXpath {
     
     @Test(description = "R0002-TC006 locate \" Motor \" link using parent:: concept by xpath")
     public void testUsingParentKeywordByXpath(){
-    	driver.findElement(By.xpath("//div[@class='hl-cat-nav__expander']/parent::li[@class='hl-cat-nav__js-tab']/child::a[@href='https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334']")).click();
+    	driver.findElement(By.xpath("//div[@class='hl-cat-nav__expander']/parent::li[@class='hl-cat-nav__js-tab']"
+    			+ "/child::a[@href='https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334']")).click();
     }
     
     @AfterMethod

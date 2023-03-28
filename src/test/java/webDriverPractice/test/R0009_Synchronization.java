@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0009Synchronization {
+public class R0009_Synchronization {
 	WebDriver driver;
 
 	@BeforeMethod

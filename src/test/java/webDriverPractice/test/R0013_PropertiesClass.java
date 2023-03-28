@@ -8,7 +8,7 @@ import java.util.Properties;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class R0013PropertiesClass {
+public class R0013_PropertiesClass {
 
 	Properties prop;
 

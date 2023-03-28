@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0008TakeScreenShots {
+public class R0008_TakeScreenShots {
 	WebDriver driver;
 
 	@BeforeMethod

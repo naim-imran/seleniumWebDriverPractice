@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0006AlertClass {
+public class R0006_AlertClass {
 	WebDriver driver;
 
 	@BeforeMethod

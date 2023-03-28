@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0004DropDown {
+public class R0004_DropDown {
 	 WebDriver driver;
 
 		@BeforeMethod
@@ -22,8 +22,6 @@ public class R0004DropDown {
 			InitialComponents initialComponents = new InitialComponents();
 			driver = initialComponents.launchBrowser();
 			driver.get("https://www.ebay.com/");
-			//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			Thread.sleep(5);
 		}
 		
 		@AfterMethod
@@ -31,7 +29,6 @@ public class R0004DropDown {
 			try {
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
@@ -39,13 +36,13 @@ public class R0004DropDown {
 		}
 		
 		
-		@Test(description = "A004-TC001 select fast from Select Speed Dropdown using Select class")
+		@Test(description = "A004-TC001 select \"Cell Phones & Accessories\" from Select  Dropdown using Select class")
 		public void testDropdownUsingSelectClass() {
 			Select selectAspeed = new Select(driver.findElement(By.name("_sacat")));
 			selectAspeed.selectByVisibleText("Cell Phones & Accessories");
 		}
 		
-		@Test(description = "A004-TC002 select item from \"Search Box\" dynamic dropdown list")
+		@Test(description = "A004-TC002 test \"Search Box\" dynamic dropdown list")
 		public void testDynamicDropDownList() throws InterruptedException {
 			WebDriverWait explicitWait = new WebDriverWait(driver,Duration.ofSeconds(10));
 			
@@ -61,10 +58,8 @@ public class R0004DropDown {
 					element.click();
 					break;
 				
-				}
-				 
-			}
-			
+				}				 
+			}			
 		}
 		
 		

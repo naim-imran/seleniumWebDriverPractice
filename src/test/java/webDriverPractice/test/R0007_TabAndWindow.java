@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0007TabAndWindow {
+public class R0007_TabAndWindow {
 	WebDriver driver;
 
 	@BeforeMethod

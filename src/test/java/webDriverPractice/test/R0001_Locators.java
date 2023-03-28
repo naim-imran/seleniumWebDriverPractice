@@ -28,7 +28,7 @@ import webDriverPractice.initialization.InitialComponents;
  * 		we also can find webelement by using javaScriptExecutor
  */
 
-public class R0001Locators {
+public class R0001_Locators {
 	WebDriver driver;
 
 	@BeforeMethod

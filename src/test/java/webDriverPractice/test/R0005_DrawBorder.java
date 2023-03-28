@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import webDriverPractice.initialization.InitialComponents;
 
-public class R0005DrawBorder {
+public class R0005_DrawBorder {
 	 WebDriver driver;
 
 		@BeforeMethod
