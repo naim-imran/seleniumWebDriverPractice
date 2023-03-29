@@ -33,7 +33,7 @@ public class R0010_ActionsClass {
 		driver.get("https://www.amazon.com/");
 		action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click()
-				.keyDown(Keys.SHIFT).sendKeys("razer blade").build().perform();
+				.keyDown(Keys.SHIFT).sendKeys("razer blade").keyDown(Keys.ENTER).build().perform();
 	}
 	
 	@Test(priority = 4, description = "R0010-TC004 Type \"laptop\" in capital in search edit box using \"Keys.chord(\"laptop\")\" ")
@@ -41,10 +41,11 @@ public class R0010_ActionsClass {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
 		driver.get("https://www.amazon.com/");
-		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys(Keys.SHIFT, Keys.chord("laptop"));
+		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys(Keys.SHIFT, Keys.chord("laptop"), Keys.ENTER);
+		
 	}
 	
-	@Test(priority=3, description = "R0010-TC003 drage the Amazon logo to search box")
+	@Test(priority=3, description = "R0010-TC003 test the drag funtionality of dragable box")
 	public void TestDragNDrop() {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0018_checkBoxHandling">
+      <class name="webDriverPractice.test.R0010_ActionsClass">
         <methods>
-          <include name="testRadioButton"/>
           <include name="quitBrowser"/>
-          <include name="setupInitialComponents"/>
+          <include name="testkeyboardInteraction01"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0018_checkBoxHandling -->
+      </class> <!-- webDriverPractice.test.R0010_ActionsClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

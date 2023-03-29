@@ -16,13 +16,13 @@ import webDriverPractice.initialization.InitialComponents;
 public class R0011_BrokenLinkVerification {
 	WebDriver driver;
 
-	@Test(priority = 1, description = "CareFirst homepage l")
+	@Test(priority = 1, description = "R0011-TC01 CareFirst homepage link test")
 	public void testBrokenLink() {
 
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
 		driver.get("https://individual.carefirst.com/individuals-families/plans-coverage/medical/medicaid-plans.page");
-		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 
 		WebElement objIndividual = driver.findElement(By.xpath("//div[@id='leftNav']//a[contains(text(),'Individual & Family Plans')]"));
