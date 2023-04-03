@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-28T17:23:14 EDT" name="Default suite" finished-at="2023-03-28T17:26:19 EDT" duration-ms="184543">
+  <suite started-at="2023-03-30T04:23:04 EDT" name="Default suite" finished-at="2023-03-30T04:23:12 EDT" duration-ms="7432">
     <groups>
     </groups>
-    <test started-at="2023-03-28T17:23:14 EDT" name="Default test" finished-at="2023-03-28T17:26:19 EDT" duration-ms="184543">
-      <class name="webDriverPractice.test.R0011_BrokenLinkVerification">
-        <test-method signature="testBrokenLink()[pri:1, instance:webDriverPractice.test.R0011_BrokenLinkVerification@121314f7]" started-at="2023-03-28T17:23:14 EDT" name="testBrokenLink" description="R0011-TC01 CareFirst homepage link test" finished-at="2023-03-28T17:26:08 EDT" duration-ms="173762" status="PASS">
+    <test started-at="2023-03-30T04:23:04 EDT" name="Default test" finished-at="2023-03-30T04:23:12 EDT" duration-ms="7432">
+      <class name="webDriverPractice.test.R0019_ThreadSafeDriver">
+        <test-method signature="testThreadSafeDriver()[pri:0, instance:webDriverPractice.test.R0019_ThreadSafeDriver@4d154ccd]" started-at="2023-03-30T04:23:05 EDT" name="testThreadSafeDriver" finished-at="2023-03-30T04:23:12 EDT" duration-ms="7337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBrokenLink -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011_BrokenLinkVerification@121314f7]" started-at="2023-03-28T17:26:08 EDT" name="quitBrowser" finished-at="2023-03-28T17:26:19 EDT" duration-ms="10715" status="PASS">
+        </test-method> <!-- testThreadSafeDriver -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0019_ThreadSafeDriver@4d154ccd]" started-at="2023-03-30T04:23:12 EDT" name="quitBrowser" finished-at="2023-03-30T04:23:12 EDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- webDriverPractice.test.R0011_BrokenLinkVerification -->
+      </class> <!-- webDriverPractice.test.R0019_ThreadSafeDriver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

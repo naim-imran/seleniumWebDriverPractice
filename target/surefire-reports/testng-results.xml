@@ -2,128 +2,128 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-29T01:50:47 EDT" name="Suite" finished-at="2023-03-29T01:52:11 EDT" duration-ms="83575">
+  <suite started-at="2023-03-29T02:38:47 EDT" name="Suite" finished-at="2023-03-29T02:40:09 EDT" duration-ms="81718">
     <groups>
     </groups>
-    <test started-at="2023-03-29T01:50:47 EDT" name="Test" finished-at="2023-03-29T01:52:11 EDT" duration-ms="83575">
+    <test started-at="2023-03-29T02:38:47 EDT" name="Test" finished-at="2023-03-29T02:40:09 EDT" duration-ms="81718">
       <class name="webDriverPractice.test.R0001_LocatorsTest">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:50:47 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:50:53 EDT" duration-ms="5288" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:38:47 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:38:53 EDT" duration-ms="5857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="className_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:50:53 EDT" name="className_LocatorTest" description="TC006 click on search button using className locator" finished-at="2023-03-29T01:50:55 EDT" duration-ms="2018" status="PASS">
+        <test-method signature="className_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:38:53 EDT" name="className_LocatorTest" description="TC006 click on search button using className locator" finished-at="2023-03-29T02:38:55 EDT" duration-ms="2000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- className_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:50:55 EDT" name="quitBrowser" finished-at="2023-03-29T01:50:58 EDT" duration-ms="3260" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:38:55 EDT" name="quitBrowser" finished-at="2023-03-29T02:38:58 EDT" duration-ms="3266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:50:58 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:01 EDT" duration-ms="3349" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:38:58 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:02 EDT" duration-ms="3541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="cssSelector_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:01 EDT" name="cssSelector_LocatorTest" description="TC005 type &quot;mobile&quot; in search textbox by cssSelector" finished-at="2023-03-29T01:51:02 EDT" duration-ms="329" status="PASS">
+        <test-method signature="cssSelector_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:02 EDT" name="cssSelector_LocatorTest" description="TC005 type &quot;mobile&quot; in search textbox by cssSelector" finished-at="2023-03-29T02:39:03 EDT" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cssSelector_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:02 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:06 EDT" duration-ms="4147" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:03 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:07 EDT" duration-ms="4349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:06 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:09 EDT" duration-ms="3246" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:07 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:10 EDT" duration-ms="3371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="id_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:09 EDT" name="id_LocatorTest" description="TC001 locate ebay logo by ID" finished-at="2023-03-29T01:51:09 EDT" duration-ms="118" status="PASS">
+        <test-method signature="id_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:10 EDT" name="id_LocatorTest" description="TC001 locate ebay logo by ID" finished-at="2023-03-29T02:39:11 EDT" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- id_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:09 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:13 EDT" duration-ms="4032" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:11 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:14 EDT" duration-ms="3463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:13 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:17 EDT" duration-ms="3505" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:14 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:17 EDT" duration-ms="2878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="linkText_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:17 EDT" name="linkText_LocatorTest" description="TC007 click on Electronics link button using linkTest locator" finished-at="2023-03-29T01:51:19 EDT" duration-ms="1869" status="PASS">
+        <test-method signature="linkText_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:17 EDT" name="linkText_LocatorTest" description="TC007 click on Electronics link button using linkTest locator" finished-at="2023-03-29T02:39:19 EDT" duration-ms="2190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkText_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:19 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:22 EDT" duration-ms="3279" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:19 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:22 EDT" duration-ms="3270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:22 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:25 EDT" duration-ms="3579" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:22 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:26 EDT" duration-ms="3189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="name_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:25 EDT" name="name_LocatorTest" description="TC002 expand catagory filter list by using name locator" finished-at="2023-03-29T01:51:26 EDT" duration-ms="176" status="PASS">
+        <test-method signature="name_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:26 EDT" name="name_LocatorTest" description="TC002 expand catagory filter list by using name locator" finished-at="2023-03-29T02:39:26 EDT" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:26 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:30 EDT" duration-ms="4142" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:26 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:29 EDT" duration-ms="3495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:30 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:33 EDT" duration-ms="3571" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:29 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:32 EDT" duration-ms="2663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="partialLinkText_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:33 EDT" name="partialLinkText_LocatorTest" description="TC008 click on &quot;Home &amp; Garden&quot; link button using partialLink locator" finished-at="2023-03-29T01:51:36 EDT" duration-ms="2415" status="PASS">
+        <test-method signature="partialLinkText_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:32 EDT" name="partialLinkText_LocatorTest" description="TC008 click on &quot;Home &amp; Garden&quot; link button using partialLink locator" finished-at="2023-03-29T02:39:34 EDT" duration-ms="2271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- partialLinkText_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:36 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:39 EDT" duration-ms="3298" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:34 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:37 EDT" duration-ms="3263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:39 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:43 EDT" duration-ms="3480" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:37 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:41 EDT" duration-ms="3377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="relativeLocatorBelow()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:43 EDT" name="relativeLocatorBelow" description="TC010 click on &quot;Advance&quot; link below cart using relative locator below()" finished-at="2023-03-29T01:51:44 EDT" duration-ms="1533" status="PASS">
+        <test-method signature="relativeLocatorBelow()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:41 EDT" name="relativeLocatorBelow" description="TC010 click on &quot;Advance&quot; link below cart using relative locator below()" finished-at="2023-03-29T02:39:42 EDT" duration-ms="1673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- relativeLocatorBelow -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:44 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:47 EDT" duration-ms="3299" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:42 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:46 EDT" duration-ms="3266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:47 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:51 EDT" duration-ms="3434" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:46 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:49 EDT" duration-ms="3366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="relativeLocator_above()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:51 EDT" name="relativeLocator_above" description="TC009 click on &quot;sign in&quot; link button using relative locator above()" finished-at="2023-03-29T01:51:52 EDT" duration-ms="1435" status="PASS">
+        <test-method signature="relativeLocator_above()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:49 EDT" name="relativeLocator_above" description="TC009 click on &quot;sign in&quot; link button using relative locator above()" finished-at="2023-03-29T02:39:50 EDT" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- relativeLocator_above -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:52 EDT" name="quitBrowser" finished-at="2023-03-29T01:51:56 EDT" duration-ms="3277" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:50 EDT" name="quitBrowser" finished-at="2023-03-29T02:39:54 EDT" duration-ms="3268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:56 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:51:59 EDT" duration-ms="3405" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:54 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:39:57 EDT" duration-ms="3422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="tagName_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:59 EDT" name="tagName_LocatorTest" description="TC003 print number of input tag present in the DOM by tagName" finished-at="2023-03-29T01:51:59 EDT" duration-ms="40" status="PASS">
+        <test-method signature="tagName_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:57 EDT" name="tagName_LocatorTest" description="TC003 print number of input tag present in the DOM by tagName" finished-at="2023-03-29T02:39:57 EDT" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tagName_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:51:59 EDT" name="quitBrowser" finished-at="2023-03-29T01:52:04 EDT" duration-ms="4650" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:39:57 EDT" name="quitBrowser" finished-at="2023-03-29T02:40:01 EDT" duration-ms="4101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:52:04 EDT" name="setupInitialComponents" finished-at="2023-03-29T01:52:07 EDT" duration-ms="3407" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:40:01 EDT" name="setupInitialComponents" finished-at="2023-03-29T02:40:05 EDT" duration-ms="3510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="xpath_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:52:07 EDT" name="xpath_LocatorTest" description="TC004 type &quot;laptops&quot; in search textbox by xpath" finished-at="2023-03-29T01:52:07 EDT" duration-ms="222" status="PASS">
+        <test-method signature="xpath_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:40:05 EDT" name="xpath_LocatorTest" description="TC004 type &quot;laptops&quot; in search textbox by xpath" finished-at="2023-03-29T02:40:05 EDT" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- xpath_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T01:52:07 EDT" name="quitBrowser" finished-at="2023-03-29T01:52:11 EDT" duration-ms="3689" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001_LocatorsTest@3f197a46]" started-at="2023-03-29T02:40:05 EDT" name="quitBrowser" finished-at="2023-03-29T02:40:09 EDT" duration-ms="3924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

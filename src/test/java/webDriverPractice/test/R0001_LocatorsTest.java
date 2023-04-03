@@ -1,5 +1,7 @@
 package webDriverPractice.test;
 
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,8 +9,6 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import static org.openqa.selenium.support.locators.RelativeLocator.*;
-import webDriverPractice.initialization.InitialComponents;
 
 /* as the name suggest, it is used to locate web element in html DOM.
  * 
@@ -29,12 +29,15 @@ import webDriverPractice.initialization.InitialComponents;
  */
 
 public class R0001_LocatorsTest {
-	WebDriver driver;
+	private WebDriver driver;
 
 	@BeforeMethod
 	public void setupInitialComponents() {
-		InitialComponents initialComponents = new InitialComponents();
-		driver = initialComponents.launchBrowser();
+		/*
+		 * InitialComponents initialComponents = new InitialComponents();
+		 *  driver = initialComponents.launchBrowser();
+		 */
+		driver = new R0019_ThreadSafeDriver().launchBrowser();
 		driver.get("https://www.ebay.com/");
 	}
 

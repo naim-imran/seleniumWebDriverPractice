@@ -26,8 +26,8 @@ public class InitialComponents {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"): prop.getProperty("browser");
+
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser"): prop.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -35,20 +35,18 @@ public class InitialComponents {
 			co.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(co);
 			driver.manage().window().maximize();
-			return driver;
-		} else if (browserName.equalsIgnoreCase(prop.getProperty("firefox"))) {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			return driver;
 		}
 
 		else {
 			return driver = null;
 		}
-		
-		
-		
+
+		return driver;
+
 	}
 
 }
