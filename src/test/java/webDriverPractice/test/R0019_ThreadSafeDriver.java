@@ -64,12 +64,18 @@ public class R0019_ThreadSafeDriver {
 		driver.manage().window().maximize();
 		return driver;
 	}
+	
+	public void removeThreadSafeBrowser(WebDriver driver) {
+		driver.quit();
+		threadLocaldriver.remove();
+	}
 
 	
 	@Test
 	public void testThreadSafeDriver() {
 		WebDriver driver = launchBrowser();
 	driver.get("https://www.google.com/");
+	driver.quit();
 	}
 	@AfterMethod
 	public void quitBrowser() {
