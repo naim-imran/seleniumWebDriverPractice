@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0001_LocatorsTest">
+      <class name="webDriverPractice.test.R0004_DropDown">
         <methods>
-          <include name="name_LocatorTest"/>
-          <include name="quitBrowser"/>
+          <include name="testEbayDropDown"/>
           <include name="setupInitialComponents"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0001_LocatorsTest -->
+      </class> <!-- webDriverPractice.test.R0004_DropDown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
