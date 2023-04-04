@@ -17,11 +17,12 @@ public class R0011_BrokenLinkVerification {
 	WebDriver driver;
 
 	@Test(priority = 1, description = "R0011-TC01 CareFirst homepage link test")
-	public void testBrokenLink() {
+	public void testBrokenLink() throws InterruptedException {
 
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
 		driver.get("https://individual.carefirst.com/individuals-families/plans-coverage/medical/medicaid-plans.page");
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 
@@ -47,6 +48,7 @@ public class R0011_BrokenLinkVerification {
 			for (String childWindowHandle:whnd) {
 				if (!parentWindowHandle.equals(childWindowHandle)) {
 					driver.switchTo().window(childWindowHandle);
+					Thread.sleep(2000);
 					System.out.println((i+1) + " Page Title: " + driver.getTitle());
 					System.out.println("     Link: " + driver.getCurrentUrl());
 					driver.close();

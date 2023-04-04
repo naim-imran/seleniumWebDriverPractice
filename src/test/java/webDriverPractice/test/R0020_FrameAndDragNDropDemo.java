@@ -34,10 +34,7 @@ public class R0020_FrameAndDragNDropDemo {
 			System.out.println(driver.switchTo().defaultContent().findElement(By.xpath("//h1[@class='entry-title']")).getText());
 			
 			threadSafeDriver.removeThreadSafeBrowser(driver);
-		}
-		
-		
-		
+		}	
 	
 	}
 

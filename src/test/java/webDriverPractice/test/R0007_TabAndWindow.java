@@ -35,19 +35,20 @@ public class R0007_TabAndWindow {
 	
 	@Test(description = "R0007-TC01 Open \"Help & Contacts\" in new window")
 	public void testChildWindowHandle() {
-		
+		String parentWindow = driver.getWindowHandle();
+		System.out.println("parent window: " + driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
 		driver.findElement(By.xpath("//a[text()=' Help & Contact']")).sendKeys(Keys.CONTROL, Keys.ENTER);
-	
+
 		// get all the window handle ids 
 		Set<String> windowIDs = driver.getWindowHandles();
-		
 		Iterator<String> windowIDsIterator = windowIDs.iterator();
 		windowIDsIterator.next();
-		//driver.switchTo().window(firstOpenedWindow);
-		System.out.println(driver.getTitle());
-		
 		driver.switchTo().window(windowIDsIterator.next());
-		System.out.println(driver.getTitle());
-		driver.close();
+		System.out.println("child window: " + driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.switchTo().window(parentWindow);
 	}
+	
+	
 }

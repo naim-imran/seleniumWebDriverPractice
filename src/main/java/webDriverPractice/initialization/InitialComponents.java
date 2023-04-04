@@ -3,6 +3,7 @@ package webDriverPractice.initialization;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -34,10 +35,12 @@ public class InitialComponents {
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(co);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 		}
 
