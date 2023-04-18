@@ -41,12 +41,16 @@ public class R0004_DropDown {
 	}
 
 	@Test(description = "R0004-TC001 select \"Cell Phones & Accessories\" from Select  Dropdown using Select class")
+	// there are three ways we can select option from drop down with select tag
+				//(01)	selectByIndex
+				//(02)	selectByValue
+				//(03)	selectByVisibleText
 	public void testDropdownUsingSelectClass() {
-		Select selectAspeed = new Select(driver.findElement(By.name("_sacat")));
-		selectAspeed.selectByVisibleText("Cell Phones & Accessories");
+		Select selectDropDown = new Select(driver.findElement(By.name("_sacat")));
+		selectDropDown.selectByVisibleText("Cell Phones & Accessories");
 	}
 
-	@Test(description = "A004-TC002 test \"Search Box\" dynamic dropdown list")
+	@Test(description = "A004-TC002 test \"Search Box\" with auto suggestive dropdown")
 	public void testDynamicDropDownList() throws InterruptedException {
 		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -66,7 +70,7 @@ public class R0004_DropDown {
 		}
 	}
 
-	@Test(description = "R0004-TC003 verify My eBay drop down funtionality")
+	@Test(description = "R0004-TC003 verify \"My eBay\"  bootstrap drop down funtionality using bootstrap technique")
 	public void testEbayDropDown() throws InterruptedException {
 		String parentwindowHandle = driver.getWindowHandle();
 		Actions action = new Actions(driver);

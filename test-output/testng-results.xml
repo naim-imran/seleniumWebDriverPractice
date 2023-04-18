@@ -2,20 +2,20 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-04T04:23:54 EDT" name="Default suite" finished-at="2023-04-04T04:25:00 EDT" duration-ms="66233">
+  <suite started-at="2023-04-18T03:33:21 EDT" name="Default suite" finished-at="2023-04-18T03:33:33 EDT" duration-ms="12735">
     <groups>
     </groups>
-    <test started-at="2023-04-04T04:23:54 EDT" name="Default test" finished-at="2023-04-04T04:25:00 EDT" duration-ms="66233">
+    <test started-at="2023-04-18T03:33:21 EDT" name="Default test" finished-at="2023-04-18T03:33:33 EDT" duration-ms="12735">
       <class name="webDriverPractice.test.R0004_DropDown">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0004_DropDown@70e9c95d]" started-at="2023-04-04T04:23:54 EDT" name="setupInitialComponents" finished-at="2023-04-04T04:24:01 EDT" duration-ms="7370" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0004_DropDown@70e9c95d]" started-at="2023-04-18T03:33:21 EDT" name="setupInitialComponents" finished-at="2023-04-18T03:33:28 EDT" duration-ms="7056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="testEbayDropDown()[pri:0, instance:webDriverPractice.test.R0004_DropDown@70e9c95d]" started-at="2023-04-04T04:24:01 EDT" name="testEbayDropDown" description="R0004-TC003 verify My eBay drop down funtionality" finished-at="2023-04-04T04:24:55 EDT" duration-ms="53620" status="PASS">
+        <test-method signature="testDropdownUsingSelectClass()[pri:0, instance:webDriverPractice.test.R0004_DropDown@70e9c95d]" started-at="2023-04-18T03:33:28 EDT" name="testDropdownUsingSelectClass" description="R0004-TC001 select &quot;Cell Phones &amp; Accessories&quot; from Select  Dropdown using Select class" finished-at="2023-04-18T03:33:29 EDT" duration-ms="1014" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEbayDropDown -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0004_DropDown@70e9c95d]" started-at="2023-04-04T04:24:55 EDT" name="quitBrowser" finished-at="2023-04-04T04:25:00 EDT" duration-ms="5174" status="PASS">
+        </test-method> <!-- testDropdownUsingSelectClass -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0004_DropDown@70e9c95d]" started-at="2023-04-18T03:33:29 EDT" name="quitBrowser" finished-at="2023-04-18T03:33:33 EDT" duration-ms="4595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
