@@ -7,7 +7,9 @@
         <methods>
           <include name="testEbayDropDown"/>
           <include name="setupInitialComponents"/>
+          <include name="testDropdownUsingSelectClass"/>
           <include name="quitBrowser"/>
+          <include name="testDynamicDropDownList"/>
         </methods>
       </class> <!-- webDriverPractice.test.R0004_DropDown -->
     </classes>

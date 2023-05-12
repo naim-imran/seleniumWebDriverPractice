@@ -27,6 +27,14 @@ public class R0004_DropDown {
 		driver = initialComponents.launchBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.ebay.com/");
+		//driver.manage().deleteAllCookies();
+//		driver.findElement(By.xpath("//span[@id='gh-ug']/a[text()='Sign in']")).click();
+//		driver.findElement(By.xpath("//input[@id='userid']")).sendKeys("mail4testprojects@gmail.com");
+//		driver.findElement(By.xpath("//button[@id='signin-continue-btn']")).click();
+//		driver.wait(3000);
+////		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='tt']")));
+//		driver.findElement(By.xpath("//div/input[@id='pass']")).sendKeys("test54321@$");
+		
 	}
 
 	@AfterMethod
