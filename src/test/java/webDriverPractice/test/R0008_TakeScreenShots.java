@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,13 +17,14 @@ import webDriverPractice.initialization.InitialComponents;
 
 public class R0008_TakeScreenShots {
 	WebDriver driver;
-
+	String methodName;
+	
 	@BeforeMethod
 	public void setupInitialComponents() throws InterruptedException {
 		InitialComponents initialComponents = new InitialComponents();
 		driver = initialComponents.launchBrowser();
 		driver.get("https://www.ebay.com/");
-		
+		methodName = initialComponents.getMethodName();
 		Thread.sleep(5);
 	}
 	
@@ -39,8 +41,9 @@ public class R0008_TakeScreenShots {
 	@Test(description = "R0008-TC01 take screenShot of ebay Home page")
 	public void testTakeScreenShot() throws IOException {
 		
-		String currentTime = LocalDateTime.now().toString();
-		String screenShotName =((currentTime.replace(".", "_")).replace(":", "_"));
+		
+		
+		String screenShotName =LocalDateTime.now().toString(); 
 		// take the screenshot using getScreenShotAs() method and store it in variable as file.
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		// copy the file using copyFile() method in FileUtils class.
@@ -49,5 +52,8 @@ public class R0008_TakeScreenShots {
 		
 		System.out.println("Please refresh prokect to see the Screenshots");
 		System.out.println("Screenshot is saved into " + System.getProperty("user.dir") + "//src//test//java//screenShots");
+		
+		
 	}
+	
 }

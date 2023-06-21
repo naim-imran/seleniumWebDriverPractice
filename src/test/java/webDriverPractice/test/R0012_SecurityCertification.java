@@ -29,7 +29,7 @@ public class R0012_SecurityCertification {
 
 	}
 
-	@Test
+	@Test(description = "validate the SSL certification using chrome DecTool")
 	public void devToolsTest() throws InterruptedException {
 		//access browser before enabling security. 
 		driver.get("https://assured-id-root-ca-expired.chain-demos.digicert.com/");
@@ -44,6 +44,11 @@ public class R0012_SecurityCertification {
 		System.out.println(driver.getCurrentUrl()+ " " + new Date().getTime());
 		
 		Thread.sleep(2000);
+	}
+	
+	@Test(description = "validate the SSL certification using chromeOptions class")
+	public void securityCertificates() {
+		driver.get("https://assured-id-root-ca-expired.chain-demos.digicert.com/");
 	}
 
 	@AfterMethod

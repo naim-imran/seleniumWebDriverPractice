@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0004_DropDown">
+      <class name="webDriverPractice.test.R0011_BrokenLinkVerification">
         <methods>
-          <include name="testEbayDropDown"/>
-          <include name="setupInitialComponents"/>
-          <include name="testDropdownUsingSelectClass"/>
+          <include name="testBrokenListUsingHttpsURLConnection"/>
           <include name="quitBrowser"/>
-          <include name="testDynamicDropDownList"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0004_DropDown -->
+      </class> <!-- webDriverPractice.test.R0011_BrokenLinkVerification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
