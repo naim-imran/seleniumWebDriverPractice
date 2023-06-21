@@ -3,7 +3,6 @@ package webDriverPractice.test;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -23,10 +22,10 @@ public class Draft {
 		
 		driver.get("https://www.ebay.com");
 		
-		List<WebElement> url = driver.findElements(By.tagName("a"));
+		List<WebElement> url = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
 		System.out.println( "total link " + url.size());
 		
-		for (int i =0; i<=url.size(); i++) {
+		for (int i =0; i<url.size(); i++) {
 			
 			String url1 = url.get(i).getAttribute("href");
 			
