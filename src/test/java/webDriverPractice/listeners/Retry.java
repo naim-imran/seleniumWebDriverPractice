@@ -5,7 +5,7 @@ import org.testng.ITestResult;
 
 public class Retry implements IRetryAnalyzer{
 	private byte count =1;
-	private byte max = 2;
+	private byte max = 1;
 	@Override
 	public boolean retry(ITestResult result) {
 		if (count<=max) {
