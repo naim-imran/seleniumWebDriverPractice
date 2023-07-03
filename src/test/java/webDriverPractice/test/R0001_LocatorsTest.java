@@ -1,7 +1,10 @@
 package webDriverPractice.test;
 
-import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import static org.openqa.selenium.support.locators.RelativeLocator.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -105,7 +108,7 @@ public class R0001_LocatorsTest {
 	
 	@Test(description = "TC009 click on \"sign in\" link button using relative locator above()")
 	public void relativeLocator_above() {
-		/*to use relative locators we have to manually import (org.openqa.selenium.support.locators.RelativeLocator.with(By by))*/
+		/*to use relative locators we have to manually import (org.openqa.selenium.support.locators.RelativeLocator.*  */
 		driver.findElement(with(By.xpath("//span[@id='gh-ug']")).above(driver.findElement(By.xpath("//a[@id='gh-la']")))).click();
 	}
 	

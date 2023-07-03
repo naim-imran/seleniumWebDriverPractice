@@ -1,13 +1,17 @@
 package webDriverPractice.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class R0020_FrameAndDragNDropDemo {
-	WebDriver driver;
+	private WebDriver driver;
 	R0019_ThreadSafeDriver threadSafeDriver = new R0019_ThreadSafeDriver();
 		
 		@BeforeMethod
@@ -15,6 +19,10 @@ public class R0020_FrameAndDragNDropDemo {
 			
 			 driver =threadSafeDriver.launchBrowser();
 			 driver.get("https://jqueryui.com/droppable/");
+		}
+		@AfterMethod
+		private void quitBrowser() {
+			driver.quit();
 		}
 		
 		

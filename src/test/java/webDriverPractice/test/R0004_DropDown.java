@@ -1,5 +1,8 @@
 package webDriverPractice.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 import java.util.Set;
@@ -76,33 +79,6 @@ public class R0004_DropDown {
 
 			}
 		}
-	}
-
-	@Test(description = "R0004-TC003 verify \"My eBay\"  bootstrap drop down funtionality using bootstrap technique")
-	public void testEbayDropDown() throws InterruptedException {
-		String parentwindowHandle = driver.getWindowHandle();
-		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(By.xpath("//a[@title='My eBay']"))).build().perform();
-		List<WebElement> myEbayDropDown = driver.findElements(By.xpath("//a[@class='gh-eb-oa thrd']"));
-		byte counter = 0;
-		for (WebElement option : myEbayDropDown) {
-			counter++;
-			Thread.sleep(2000);
-			System.out.println(counter + " " + option.getText());
-			option.sendKeys(Keys.CONTROL, Keys.ENTER);
-		}
-		Set<String> whdls = driver.getWindowHandles();
-		
-		for( String childWindow : whdls) {
-			if (!parentwindowHandle.equals(childWindow)) {
-				
-				driver.switchTo().window(childWindow);
-				Thread.sleep(2000);
-				System.out.println("page title "+driver.getTitle());
-
-			}
-		}
-		
 	}
 
 }

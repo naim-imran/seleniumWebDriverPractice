@@ -1,5 +1,8 @@
 package webDriverPractice.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +15,22 @@ import webDriverPractice.initialization.InitialComponents;
 public class R0016_CalederHandling {
 	public class R0015_WebTableHandling {
 		WebDriver driver;
+		
+		public void pickDateExpediaCalender(String expectedDate) throws InterruptedException {
+			driver.findElement(By.xpath("//body")).click();
+			driver.findElement(By.xpath("//button[@id='d1-btn']")).click();
+			WebElement calender = driver.findElement(By.xpath("//div[@class='uitk-date-picker-menu-months-container']"));
+
+			for (WebElement iterator : calender.findElements(By.xpath("//button[@class='uitk-date-picker-day']"))) {
+				String monthName = iterator.getAttribute("aria-label");
+				System.out.println(monthName);
+
+				  if (monthName.equalsIgnoreCase(expectedDate)) {
+					  iterator.click();
+					  break;	  
+				  }			
+			}
+		}
 
 		@BeforeMethod
 		public void setupInitialComponents() throws InterruptedException {
@@ -29,30 +48,10 @@ public class R0016_CalederHandling {
 				
 			}
 
-			//driver.quit();
+			driver.quit();
 		}
 		
-		public void pickDateExpediaCalender(String expectedDate) throws InterruptedException {
-			driver.findElement(By.xpath("//body")).click();
-			driver.findElement(By.xpath("//button[@id='d1-btn']")).click();
-			WebElement calender = driver.findElement(By.xpath("//div[@class='uitk-date-picker-menu-months-container']"));
 
-			for (WebElement iterator : calender.findElements(By.xpath("//button[@class='uitk-date-picker-day']"))) {
-				String monthName = iterator.getAttribute("aria-label");
-				System.out.println(monthName);
-				
-				
-				
-				  if (monthName.equalsIgnoreCase(expectedDate)) {
-					  iterator.click();
-					  break;
-				  
-				  }
-				 
-				 
-				
-			}
-		}
 		
 		@Test(priority = 1, description = "Select a date from calender")
 		public void testDynamicCalendar() throws InterruptedException {

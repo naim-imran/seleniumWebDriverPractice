@@ -1,5 +1,8 @@
 package webDriverPractice.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -82,15 +85,17 @@ public class R0011_BrokenLinkVerification {
 		List<WebElement> url = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
 		System.out.println( "total link " + (url.size()-1));
 		
-		for (int i =1; i<=(url.size()-1); i++) {
+
+		for (int i =1; i<url.size(); i++) {
 			
 			String url1 = url.get(i).getAttribute("href");
+			
 			
 			HttpsURLConnection connection = (HttpsURLConnection) new URL(url1).openConnection();
 			connection.setRequestMethod("HEAD");
 			connection.connect();
 			
-			System.out.println(i + " = " + connection.getResponseCode());
+			System.out.println(i + " = \""+ url.get(i).getText() + "\"      Status code "+ connection.getResponseCode());
 			
 		}
 	
@@ -103,7 +108,7 @@ public class R0011_BrokenLinkVerification {
 			try {
 				Thread.sleep(10000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			driver.quit();

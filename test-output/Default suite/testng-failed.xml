@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0011_BrokenLinkVerification">
+      <class name="webDriverPractice.test.parameterizationWithXML">
         <methods>
-          <include name="testBrokenListUsingHttpsURLConnection"/>
-          <include name="quitBrowser"/>
+          <include name="getURL"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0011_BrokenLinkVerification -->
+      </class> <!-- webDriverPractice.test.parameterizationWithXML -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

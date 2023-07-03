@@ -1,18 +1,21 @@
 package webDriverPractice.test;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.Iterator;
-import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import webDriverPractice.initialization.InitialComponents;
 
 public class R0007_TabAndWindow {
-	WebDriver driver;
+	private WebDriver driver;
 
 	@BeforeMethod
 	public void setupInitialComponents() throws InterruptedException {
@@ -35,19 +38,31 @@ public class R0007_TabAndWindow {
 	
 	@Test(description = "R0007-TC01 Open \"Help & Contacts\" in new window")
 	public void testChildWindowHandle() {
-		String parentWindow = driver.getWindowHandle();
-		System.out.println("parent window: " + driver.getTitle());
-		System.out.println(driver.getCurrentUrl());
-		driver.findElement(By.xpath("//a[text()=' Help & Contact']")).sendKeys(Keys.CONTROL, Keys.ENTER);
-
-		// get all the window handle ids 
-		Set<String> windowIDs = driver.getWindowHandles();
-		Iterator<String> windowIDsIterator = windowIDs.iterator();
-		windowIDsIterator.next();
-		driver.switchTo().window(windowIDsIterator.next());
+		
+		String helpContactLink = driver.findElement(By.xpath("//a[text()=' Help & Contact']")).getAttribute("href");
+		driver.switchTo().newWindow(WindowType.TAB);
+		Iterator<String> it = driver.getWindowHandles().iterator();
+		String parentWindow = it.next();
+		
+		
+		driver.get(helpContactLink);
 		System.out.println("child window: " + driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
+		
 		driver.switchTo().window(parentWindow);
+		System.out.println("Parent window: " + driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		
+		
+
+//		// get all the window handle ids 
+//		Set<String> windowIDs = driver.getWindowHandles();
+//		Iterator<String> windowIDsIterator = windowIDs.iterator();
+//		driver.switchTo().window(windowIDsIterator.next());
+//		System.out.println("child window: " + driver.getTitle());
+//		System.out.println(driver.getCurrentUrl());
+//		driver.switchTo().window(parentWindow);
+//		System.out.println(driver.getCurrentUrl());
 	}
 	
 	

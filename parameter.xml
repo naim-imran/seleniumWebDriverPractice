@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+  <test thread-count="5" name="Test">
+	  <parameter name="url" value="www.ebay.com"></parameter>
+	  <parameter name="user" value="naim"></parameter>
+    <classes>
+      <class name="webDriverPractice.test.parameterizationWithXML"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

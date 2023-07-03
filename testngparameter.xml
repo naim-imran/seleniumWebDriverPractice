@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="webDriverPractice.test.R0001_LocatorsTest"/>
+      <class name="/seleniumWebDriverPractice/src/test/java/webDriverPractice/testNG/parameterizationWithXML.java"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

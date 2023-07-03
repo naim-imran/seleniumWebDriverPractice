@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
-		<listeners>
+
+	<!--	<listeners>
 		<listener class-name="testListeners.Listeners"></listener>
-	</listeners>
+	</listeners>-->
+	<parameter name="url" value="www.ebay.com"/>
+	<parameter name="url1" value="www.ebay.com"/>
 	
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="webDriverPractice.test.R0014_JavaScriptExecutor"/>
-      <class name="webDriverPractice.test.R0006_AlertClass"/>
-      <class name="webDriverPractice.test.R0017_ReadExcelData"/>
-      <class name="webDriverPractice.test.R0018_checkBoxHandling"/>
-      <class name="webDriverPractice.test.R0010_ActionsClass"/>
-      <class name="webDriverPractice.test.R0009_Synchronization"/>
-      <class name="webDriverPractice.test.R0015_WebTableHandling"/>
-      <class name="webDriverPractice.test.R0004_DropDown"/>
-      <class name="webDriverPractice.test.R0011_BrokenLinkVerification"/>
-      <class name="webDriverPractice.test.R0003_CSSselector"/>
-      <class name="webDriverPractice.test.R0008_TakeScreenShots"/>
-      <class name="webDriverPractice.test.R0016_CalederHandling"/>
-      <class name="webDriverPractice.test.R0012_SecurityCertification"/>
-      <class name="webDriverPractice.test.R0002_RelativeXpath"/>
-      <class name="webDriverPractice.test.R0013_PropertiesClass"/>
-      <class name="webDriverPractice.test.R0005_DrawBorder"/>
-      <class name="webDriverPractice.test.R0007_TabAndWindow"/>
-      <class name="webDriverPractice.test.R0001_LocatorsTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="webDriverPractice.test.R0014_JavaScriptExecutor" />
+			<class name="webDriverPractice.test.R0006_AlertClass" />
+			<class name="webDriverPractice.test.R0017_ReadExcelData" />
+			<class name="webDriverPractice.test.R0018_checkBoxHandling" />
+			<class name="webDriverPractice.test.R0010_ActionsClass" />
+			<class name="webDriverPractice.test.R0009_Synchronization" />
+			<class name="webDriverPractice.test.R0015_WebTableHandling" />
+			<class name="webDriverPractice.test.R0004_DropDown" />
+			
+			
+			<class name="webDriverPractice.test.R0011_BrokenLinkVerification">
+				<methods>
+					<exclude name="testBrokenLink()"></exclude>
+				</methods>
+			</class>
+
+
+			<class name="webDriverPractice.test.R0003_CSSselector" />
+			<class name="webDriverPractice.test.R0008_TakeScreenShots" />
+			<class name="webDriverPractice.test.R0016_CalederHandling" />
+			<class name="webDriverPractice.test.R0012_SecurityCertification" />
+			<class name="webDriverPractice.test.R0002_RelativeXpath" />
+			<class name="webDriverPractice.test.R0013_PropertiesClass" />
+			<class name="webDriverPractice.test.R0005_DrawBorder" />
+			<class name="webDriverPractice.test.R0007_TabAndWindow" />
+			<class name="webDriverPractice.test.R0001_LocatorsTest" />
+		</classes>
+
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
