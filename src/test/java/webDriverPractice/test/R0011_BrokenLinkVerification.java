@@ -16,6 +16,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -74,7 +75,7 @@ public class R0011_BrokenLinkVerification {
 		}
 	}
 
-	@Test
+	@Test(retryAnalyzer = webDriverPractice.listeners.Retry.class)
 	public void testBrokenListUsingHttpsURLConnection() throws MalformedURLException, IOException {
 	InitialComponents initialComponents = new InitialComponents();
 		
@@ -85,9 +86,9 @@ public class R0011_BrokenLinkVerification {
 		List<WebElement> url = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
 		System.out.println( "total link " + (url.size()-1));
 		
+int i;
 
-
-		for (int i =1; i<url.size(); i++) {
+		for ( i =1; i<url.size(); i++) {
 
 			
 			String url1 = url.get(i).getAttribute("href");
@@ -98,7 +99,9 @@ public class R0011_BrokenLinkVerification {
 			connection.connect();
 			
 			System.out.println(i + " = \""+ url.get(i).getText() + "\"      Status code "+ connection.getResponseCode());
-			
+			if (i==32) {
+				Assert.assertTrue(false);
+			}
 		}
 	
 
