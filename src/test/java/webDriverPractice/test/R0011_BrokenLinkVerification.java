@@ -86,7 +86,9 @@ public class R0011_BrokenLinkVerification {
 		System.out.println( "total link " + (url.size()-1));
 		
 
+
 		for (int i =1; i<url.size(); i++) {
+
 			
 			String url1 = url.get(i).getAttribute("href");
 			
