@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-03T01:42:34 EDT" name="Suite" finished-at="2023-07-03T01:42:34 EDT" duration-ms="51">
+  <suite started-at="2023-07-04T00:23:22 EDT" name="Default suite" finished-at="2023-07-04T00:23:23 EDT" duration-ms="340">
     <groups>
     </groups>
-    <test started-at="2023-07-03T01:42:34 EDT" name="Test" finished-at="2023-07-03T01:42:34 EDT" duration-ms="51">
-      <class name="webDriverPractice.test.R0021_parameterizationWithXML">
-        <test-method signature="getURL(java.lang.String)[pri:0, instance:webDriverPractice.test.R0021_parameterizationWithXML@7714e963]" started-at="2023-07-03T01:42:34 EDT" name="getURL" finished-at="2023-07-03T01:42:34 EDT" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ebay]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-07-04T00:23:22 EDT" name="Default test" finished-at="2023-07-04T00:23:23 EDT" duration-ms="340">
+      <class name="webDriverPractice.test.R0023_extendReport">
+        <test-method signature="testExtentReport()[pri:0, instance:webDriverPractice.test.R0023_extendReport@702b8b12]" started-at="2023-07-04T00:23:22 EDT" name="testExtentReport" finished-at="2023-07-04T00:23:22 EDT" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getURL -->
-      </class> <!-- webDriverPractice.test.R0021_parameterizationWithXML -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testExtentReport -->
+        <test-method signature="testExtentReport03()[pri:0, instance:webDriverPractice.test.R0023_extendReport@702b8b12]" started-at="2023-07-04T00:23:22 EDT" name="testExtentReport03" finished-at="2023-07-04T00:23:22 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtentReport03 -->
+        <test-method signature="testExtentReport2()[pri:0, instance:webDriverPractice.test.R0023_extendReport@702b8b12]" started-at="2023-07-04T00:23:22 EDT" name="testExtentReport2" finished-at="2023-07-04T00:23:22 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtentReport2 -->
+        <test-method is-config="true" signature="cleanTestBed()[pri:0, instance:webDriverPractice.test.R0023_extendReport@702b8b12]" started-at="2023-07-04T00:23:22 EDT" name="cleanTestBed" finished-at="2023-07-04T00:23:23 EDT" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanTestBed -->
+      </class> <!-- webDriverPractice.test.R0023_extendReport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

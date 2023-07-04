@@ -48,7 +48,7 @@ public class R0008_TakeScreenShots {
 		
 		String screenShotName =LocalDateTime.now().toString(); 
 		// take the screenshot using getScreenShotAs() method and store it in variable as file.
-		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// copy the file using copyFile() method in FileUtils class.
 		FileUtils.copyFile(srcFile, new File (System.getProperty("user.dir") + "//src//test//java//screenShots//" + screenShotName + ".png"));
 		driver.quit();
