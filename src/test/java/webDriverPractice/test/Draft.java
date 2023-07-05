@@ -11,32 +11,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import webDriverPractice.utilities.InitialComponents;
 
 public class Draft {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
-		InitialComponents initialComponents = new InitialComponents();
-		
-		WebDriver driver = initialComponents.launchBrowser();
-		
-		driver.get("https://www.ebay.com");
-		
-		List<WebElement> url = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
-		System.out.println( "total link " + url.size());
-		
-		for (int i =0; i<url.size(); i++) {
-			
-			String url1 = url.get(i).getAttribute("href");
-			
-			HttpsURLConnection connection = (HttpsURLConnection) new URL(url1).openConnection();
-			connection.setRequestMethod("HEAD");
-			connection.connect();
-			
-			System.out.println(i + " = " + connection.getResponseCode());
-			
-		}
-		driver.quit();
+	System.out.println(System.getProperty("user.dir"));
 	}
 
 }

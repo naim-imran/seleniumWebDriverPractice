@@ -14,7 +14,7 @@
 	</properties>
 	
 	<profiles>
-		<profile>
+		<!--<profile>
 			<id>smoke</id>
 			<build>
 				<pluginManagement>
@@ -31,7 +31,7 @@
 					</plugins>
 				</pluginManagement>
 			</build>
-		</profile>
+		</profile>-->
 		
 			<profile>
 			<id>regression</id>

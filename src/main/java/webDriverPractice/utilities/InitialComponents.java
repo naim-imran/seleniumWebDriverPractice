@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -33,7 +35,7 @@ public class InitialComponents {
 		
 		try {
 			FileInputStream fs = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/webDriverPractice/utilities/config.properties");
+					System.getProperty("user.dir") + "\\src\\main\\java\\webDriverPractice\\utilities\\config.properties");
 			prop = new Properties();
 			prop.load(fs);
 		} catch (FileNotFoundException e) {
@@ -53,9 +55,9 @@ public class InitialComponents {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions co = new ChromeOptions();
 
-			co.addArguments("--remote-allow-origins=*");
+			//co.addArguments("--remote-allow-origins=*");
 			co.setAcceptInsecureCerts(insesureCertificate);
-			co.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
+			//co.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
 
 			driver = new ChromeDriver(co);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -91,11 +93,13 @@ public class InitialComponents {
 	}
 
 	public static String getCurrentTimeToFormatedString() {
-		return LocalTime.now().toString();
+		//return LocalTime.now().toString();
+		String currentTime = LocalDateTime.now().toString();
+		return ((currentTime.replace(".", "_")).replace(":", "_"));
 	}
 
 	public InitialComponents() {
-		reporter = new ExtentSparkReporter(System.getProperty("user.dir")+ "/src/test/java/extentReports/"+time+"index.html");
+		reporter = new ExtentSparkReporter(System.getProperty("user.dir")+ "\\src\\test\\java\\extentReports\\"+time+".html");
 		reporter.config().setDocumentTitle("Title seleniumWebDriverPractice");
 		reporter.config().setReportName("Report name " + time);
 
