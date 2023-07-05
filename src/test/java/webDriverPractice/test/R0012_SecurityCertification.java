@@ -1,6 +1,9 @@
 package webDriverPractice.test;
 
 import org.testng.annotations.Test;
+
+import webDriverPractice.utilities.InitialComponents;
+
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import java.util.Date;
@@ -12,8 +15,6 @@ import org.openqa.selenium.devtools.v104.security.Security;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import webDriverPractice.initialization.InitialComponents;
 
 public class R0012_SecurityCertification {
 	WebDriver driver;

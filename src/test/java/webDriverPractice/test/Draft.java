@@ -11,7 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import webDriverPractice.initialization.InitialComponents;
+import webDriverPractice.utilities.InitialComponents;
 
 public class Draft {
 

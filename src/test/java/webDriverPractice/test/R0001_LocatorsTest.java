@@ -1,10 +1,8 @@
 package webDriverPractice.test;
 
 
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import static org.openqa.selenium.support.locators.RelativeLocator.*;
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,19 +11,24 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-/* as the name suggest, it is used to locate web element in html DOM.
+/* as the name suggest, it is used to locate web element in html DOM. There are eight different types of locators 
+ 
+							   1. Id 
+							   2. Name 
+							   3. ClassName 
+							   4. TagName 
+							   5. LinkText 
+							   6. PartialLinkText 
+							   7. Xpath 
+							   8. CSS
  * 
- * There are eight different types of locators 
- * 1. Id 
- * 2. Name 
- * 3. ClassName 
- * 4. TagName 
- * 5. LinkText 
- * 6. PartialLinkText 
- * 7. Xpath 
- * 8. CSS
+ * *. in selenium version 4 relative locators also added which includes 
  * 
- * *. in selenium version 4 relative locators also added which includes above(), below(), toRightOf() and toLeftOf() methods.
+ * 								1.above(), 
+ * 								2.below(), 
+ * 								3.toRightOf() and 
+ * 								4.toLeftOf() methods.
+ * 
  * 		to use relative locators we have to manually import (org.openqa.selenium.support.locators.RelativeLocator.with(By by))
  * 
  * 		we also can find webelement by using javaScriptExecutor

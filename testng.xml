@@ -2,9 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<!--	<listeners>
-		<listener class-name="testListeners.Listeners"></listener>
-	</listeners>-->
+	<listeners>
+		<listener class-name="webDriverPractice.listeners.Listeners"></listener>
+	</listeners>
+	
 	<parameter name="url" value="www.ebay.com"/>
 	<parameter name="url1" value="www.ebay.com"/>
 	
@@ -38,7 +39,6 @@
 			<class name="webDriverPractice.test.R0001_LocatorsTest" />
 		</classes>
 
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+</suite> 
+

@@ -1,8 +1,5 @@
 package webDriverPractice.test;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import webDriverPractice.initialization.InitialComponents;
+import webDriverPractice.utilities.InitialComponents;
 
 public class R0010_ActionsClass {
 	
@@ -19,7 +16,7 @@ public class R0010_ActionsClass {
 
 	
 
-	@Test(priority=1, description = "R0010-TC001 hover mouse on \"Hello, sign in, Account & List\"")
+	@Test(priority=1, description = "R0010-TC001 hover mouse on \"Hello, sign in, Account & List\"", retryAnalyzer = webDriverPractice.listeners.Retry.class)
 	public void testMouseHover() {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
@@ -29,7 +26,7 @@ public class R0010_ActionsClass {
 				.perform();
 	}
 
-	@Test(priority=2, description = "R0010-TC002 Type \"razer blade\" in capital in search edit box")
+	@Test(priority=2, description = "R0010-TC002 Type \"razer blade\" in capital in search edit box" , retryAnalyzer = webDriverPractice.listeners.Retry.class)
 	public void keyboardInteractionTest() {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
@@ -39,7 +36,7 @@ public class R0010_ActionsClass {
 				.keyDown(Keys.SHIFT).sendKeys("razer blade").keyDown(Keys.ENTER).build().perform();
 	}
 	
-	@Test(priority = 4, description = "R0010-TC004 Type \"laptop\" in capital in search edit box using \"Keys.chord(\"laptop\")\" ")
+	@Test(priority = 4, description = "R0010-TC004 Type \"laptop\" in capital in search edit box using \"Keys.chord(\"laptop\")\" ", retryAnalyzer = webDriverPractice.listeners.Retry.class )
 	public void testkeyboardInteraction01() {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();
@@ -48,7 +45,7 @@ public class R0010_ActionsClass {
 		
 	}
 	
-	@Test(priority=3, description = "R0010-TC003 test the drag funtionality of dragable box")
+	@Test(priority=3, description = "R0010-TC003 test the drag funtionality of dragable box", retryAnalyzer = webDriverPractice.listeners.Retry.class)
 	public void TestDragNDrop() {
 		InitialComponents initialcomponent = new InitialComponents();
 		driver = initialcomponent.launchBrowser();

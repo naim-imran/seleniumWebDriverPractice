@@ -18,7 +18,7 @@ public class R0013_PropertiesClass {
 	@BeforeMethod
 	public void setup() {
 		try {
-			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/webDriverPractice/initialization/config.properties");
+			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/webDriverPractice/utilities/config.properties");
 			prop = new Properties();
 			prop.load(fs);
 		} catch (FileNotFoundException e) {
