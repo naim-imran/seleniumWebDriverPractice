@@ -63,20 +63,21 @@ public class Listeners extends InitialComponents implements ITestListener{
 		}
 		
 
-		String time =LocalDateTime.now().toString(); 
+		String time = InitialComponents.getCurrentTimeToFormatedString();
 		// take the screenshot using getScreenShotAs() method and store it in variable as file.
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// copy the file using copyFile() method in FileUtils class.
 		try {
-			FileUtils.copyFile(srcFile, new File (System.getProperty("user.dir") + "//src//test//java//screenShots//"+name+"-"+ time + ".png"));
+			FileUtils.copyFile(srcFile, new File (System.getProperty("user.dir") + "\\src\\test\\java\\screenShots\\"+name+"-"+ time + ".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		try {
-			log.addScreenCaptureFromPath(System.getProperty("user.dir") +"//src//test//java//screenShots//"+name+"-"+ time + ".png" , name);
+			log.addScreenCaptureFromPath(System.getProperty("user.dir") +"\\src\\test\\java\\screenShots\\"+name+"-"+ time + ".png" , name);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		//driver.quit();
 	}
 
 	@Override

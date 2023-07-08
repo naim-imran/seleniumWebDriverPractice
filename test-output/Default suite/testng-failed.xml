@@ -3,22 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0001LocatorsTest">
+      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
         <methods>
-          <include name="cssSelector_LocatorTest"/>
-          <include name="id_LocatorTest"/>
-          <include name="relativeLocator_above"/>
-          <include name="relativeLocatorBelow"/>
-          <include name="setupInitialComponents"/>
-          <include name="xpath_LocatorTest"/>
-          <include name="name_LocatorTest"/>
-          <include name="className_LocatorTest"/>
           <include name="quitBrowser"/>
-          <include name="tagName_LocatorTest"/>
-          <include name="linkText_LocatorTest"/>
-          <include name="partialLinkText_LocatorTest"/>
+          <include name="testBrokenListUsingHttpsURLConnection"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0001LocatorsTest -->
+      </class> <!-- webDriverPractice.test.R0011BrokenLinkVerification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

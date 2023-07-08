@@ -30,9 +30,8 @@ public class InitialComponents {
 	public WebDriver driver;
 	Properties prop;
 	boolean insesureCertificate = false;
-
-	public WebDriver launchBrowser() {
-		
+	
+	public Properties getConfigData() {
 		try {
 			FileInputStream fs = new FileInputStream(
 					System.getProperty("user.dir") + "\\src\\main\\java\\webDriverPractice\\utilities\\config.properties");
@@ -43,13 +42,14 @@ public class InitialComponents {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-		if (prop.getProperty("insecureCertificate").equalsIgnoreCase("true")) {
+		return prop;
+	}
+	public synchronized WebDriver launchBrowser() {
+		if (getConfigData().getProperty("insecureCertificate").equalsIgnoreCase("true")) {
 			insesureCertificate = true;
 		}
 
-		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
-				: prop.getProperty("browser");
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser"): getConfigData().getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
