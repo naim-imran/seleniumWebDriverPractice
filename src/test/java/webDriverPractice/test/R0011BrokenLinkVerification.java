@@ -1,5 +1,7 @@
 package webDriverPractice.test;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -13,6 +15,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -98,6 +101,7 @@ public class R0011BrokenLinkVerification {
 		List<WebElement> url = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
 		System.out.println( "total link " + url.size());
 		List<String> brokenLink =new ArrayList<String>();
+		
 		int i;
 			for (i =0; i<url.size(); i++) {
 				String url1 = url.get(i).getAttribute("href");
@@ -109,9 +113,13 @@ public class R0011BrokenLinkVerification {
 				if (responseCode>400) {
 					brokenLink.add(url.get(i).getText());
 				}
+				if (i==32) {
+					Assert.assertTrue(false);
+				}
 			}
 		System.out.println("Total broken link "+brokenLink.size());
 		brokenLink.stream().forEach(b->System.out.println(b));
+		
 		}
 	
 		@AfterMethod
