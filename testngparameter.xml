@@ -3,7 +3,7 @@
 
 <suite name="Parallel Suite" parallel="tests" thread-count="5">
 	<listeners>
-		<listener class-name="webDriverPractice.listeners.Listeners"></listener>
+		<listener class-name="webDriverPractice.listeners.RerunFailedTestTransformer"></listener>
 	</listeners>
 	<parameter name="url" value="ebay"></parameter>
 

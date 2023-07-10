@@ -1,133 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T18:22:49 EDT" name="Surefire suite" finished-at="2023-07-05T18:24:10 EDT" duration-ms="81308">
+  <suite started-at="2023-07-08T13:13:59 EDT" name="Surefire suite" finished-at="2023-07-08T13:14:53 EDT" duration-ms="53814">
     <groups>
     </groups>
-    <test started-at="2023-07-05T18:22:49 EDT" name="Surefire test" finished-at="2023-07-05T18:24:10 EDT" duration-ms="81308">
-      <class name="webDriverPractice.test.R0001LocatorsTest">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:22:49 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:22:55 EDT" duration-ms="6328" status="PASS">
+    <test started-at="2023-07-08T13:13:59 EDT" name="Surefire test" finished-at="2023-07-08T13:14:53 EDT" duration-ms="53814">
+      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
+        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6ac13091]" started-at="2023-07-08T13:13:59 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-08T13:14:30 EDT" duration-ms="30392" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:117)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="className_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:22:55 EDT" name="className_LocatorTest" description="TC006 click on search button using className locator" finished-at="2023-07-05T18:22:58 EDT" duration-ms="2437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- className_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:22:58 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:01 EDT" duration-ms="3344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:01 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:04 EDT" duration-ms="3429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="cssSelector_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:04 EDT" name="cssSelector_LocatorTest" description="TC005 type &quot;mobile&quot; in search textbox by cssSelector" finished-at="2023-07-05T18:23:05 EDT" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cssSelector_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:05 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:08 EDT" duration-ms="3335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:08 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:11 EDT" duration-ms="3463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="id_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:11 EDT" name="id_LocatorTest" description="TC001 locate ebay logo by ID" finished-at="2023-07-05T18:23:12 EDT" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- id_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:12 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:15 EDT" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:15 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:18 EDT" duration-ms="3171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="linkText_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:18 EDT" name="linkText_LocatorTest" description="TC007 click on Electronics link button using linkTest locator" finished-at="2023-07-05T18:23:20 EDT" duration-ms="2033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkText_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:20 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:23 EDT" duration-ms="3269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:23 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:27 EDT" duration-ms="3464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="name_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:27 EDT" name="name_LocatorTest" description="TC002 expand catagory filter list by using name locator" finished-at="2023-07-05T18:23:27 EDT" duration-ms="280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- name_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:27 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:31 EDT" duration-ms="3876" status="PASS">
+        </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6ac13091]" started-at="2023-07-08T13:14:30 EDT" name="quitBrowser" finished-at="2023-07-08T13:14:32 EDT" duration-ms="2629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:31 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:34 EDT" duration-ms="3462" status="PASS">
+        <test-method signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6ac13091]" started-at="2023-07-08T13:14:32 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-08T13:14:50 EDT" duration-ms="17425" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:117)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="partialLinkText_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:34 EDT" name="partialLinkText_LocatorTest" description="TC008 click on &quot;Home &amp; Garden&quot; link button using partialLink locator" finished-at="2023-07-05T18:23:37 EDT" duration-ms="2330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- partialLinkText_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:37 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:40 EDT" duration-ms="3201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:40 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:44 EDT" duration-ms="3693" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="relativeLocatorBelow()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:44 EDT" name="relativeLocatorBelow" description="TC010 click on &quot;Advance&quot; link below cart using relative locator below()" finished-at="2023-07-05T18:23:45 EDT" duration-ms="1087" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- relativeLocatorBelow -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:45 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:48 EDT" duration-ms="3216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:48 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:23:52 EDT" duration-ms="3946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="relativeLocator_above()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:52 EDT" name="relativeLocator_above" description="TC009 click on &quot;sign in&quot; link button using relative locator above()" finished-at="2023-07-05T18:23:53 EDT" duration-ms="1567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- relativeLocator_above -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:53 EDT" name="quitBrowser" finished-at="2023-07-05T18:23:57 EDT" duration-ms="3236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:23:57 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:24:00 EDT" duration-ms="3593" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="tagName_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:24:00 EDT" name="tagName_LocatorTest" description="TC003 print number of input tag present in the DOM by tagName" finished-at="2023-07-05T18:24:00 EDT" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tagName_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:24:00 EDT" name="quitBrowser" finished-at="2023-07-05T18:24:04 EDT" duration-ms="3302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:24:04 EDT" name="setupInitialComponents" finished-at="2023-07-05T18:24:06 EDT" duration-ms="2842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupInitialComponents -->
-        <test-method signature="xpath_LocatorTest()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:24:06 EDT" name="xpath_LocatorTest" description="TC004 type &quot;laptops&quot; in search textbox by xpath" finished-at="2023-07-05T18:24:07 EDT" duration-ms="252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xpath_LocatorTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0001LocatorsTest@670002]" started-at="2023-07-05T18:24:07 EDT" name="quitBrowser" finished-at="2023-07-05T18:24:10 EDT" duration-ms="3287" status="PASS">
+        </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6ac13091]" started-at="2023-07-08T13:14:50 EDT" name="quitBrowser" finished-at="2023-07-08T13:14:53 EDT" duration-ms="3282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- webDriverPractice.test.R0001LocatorsTest -->
+      </class> <!-- webDriverPractice.test.R0011BrokenLinkVerification -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

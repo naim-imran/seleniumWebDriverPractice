@@ -14,7 +14,7 @@
 	</properties>
 	
 	<profiles>
-		<!--<profile>
+		<profile>
 			<id>smoke</id>
 			<build>
 				<pluginManagement>
@@ -24,17 +24,17 @@
 					<version>2.22.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>smokeTestng.xml</suiteXmlFile>
+							<suiteXmlFile>seleniumWebDriverPractice/smokeTest.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
 					</plugins>
 				</pluginManagement>
 			</build>
-		</profile>-->
+		</profile>
 		
 			<profile>
-			<id>regression</id>
+			<id>testProfile</id>
 			<build>
 				<pluginManagement>
 					<plugins>
@@ -43,7 +43,7 @@
 					<version>2.22.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>testngparameter.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

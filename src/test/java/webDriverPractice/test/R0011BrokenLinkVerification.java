@@ -1,7 +1,5 @@
 package webDriverPractice.test;
 
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,17 +13,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import webDriverPractice.utilities.InitialComponents;
 
 public class R0011BrokenLinkVerification {
 	public  WebDriver driver;
-
+	 private SoftAssert SoftAssert  = new SoftAssert();
+	 
 	public WebDriver getDriver() {
 		return driver;
+		
 	}
 
 	/**
@@ -92,7 +92,7 @@ public class R0011BrokenLinkVerification {
 		}
 	}
 
-	@Test(priority=0 ,retryAnalyzer = webDriverPractice.listeners.Retry.class)
+	@Test(priority=0)
 	public void testBrokenListUsingHttpsURLConnection() throws MalformedURLException, IOException {
 	InitialComponents initialComponents = new InitialComponents();
 		driver = initialComponents.launchBrowser();
@@ -114,12 +114,12 @@ public class R0011BrokenLinkVerification {
 					brokenLink.add(url.get(i).getText());
 				}
 				if (i==32) {
-					Assert.assertTrue(false);
+					SoftAssert.assertTrue(false);
 				}
 			}
 		System.out.println("Total broken link "+brokenLink.size());
 		brokenLink.stream().forEach(b->System.out.println(b));
-		
+		SoftAssert.assertAll();
 		}
 	
 		@AfterMethod
@@ -129,6 +129,7 @@ public class R0011BrokenLinkVerification {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
+			
 			driver.quit();
 		}
 	}
