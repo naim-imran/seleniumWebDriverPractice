@@ -3,16 +3,19 @@
 <suite parallel="tests" name="Failed suite [Parallel Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="url" value="ebay"/>
   <listeners>
+    <listener class-name="webDriverPractice.listeners.RerunFailedTestTransformer"/>
     <listener class-name="webDriverPractice.listeners.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Test(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="Test2(failed)" verbose="0">
     <classes>
-      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
+      <class name="webDriverPractice.test.R0008TakeScreenShots">
         <methods>
           <include name="quitBrowser"/>
-          <include name="testBrokenListUsingHttpsURLConnection"/>
+          <include name="selenium4testTakeScreenShot"/>
+          <include name="setupInitialComponents"/>
+          <include name="testTakeScreenShot"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0011BrokenLinkVerification -->
+      </class> <!-- webDriverPractice.test.R0008TakeScreenShots -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Parallel Suite] -->

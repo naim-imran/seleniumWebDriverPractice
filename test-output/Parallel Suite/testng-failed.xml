@@ -4,6 +4,7 @@
   <parameter name="url" value="ebay"/>
   <listeners>
     <listener class-name="webDriverPractice.listeners.RerunFailedTestTransformer"/>
+    <listener class-name="webDriverPractice.listeners.Listeners"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Test(failed)">
     <classes>

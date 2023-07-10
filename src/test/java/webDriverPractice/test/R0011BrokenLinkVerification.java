@@ -13,21 +13,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import webDriverPractice.utilities.InitialComponents;
 
-public class R0011BrokenLinkVerification {
+public class R0011BrokenLinkVerification extends InitialComponents {
 	public  WebDriver driver;
-	 private SoftAssert SoftAssert  = new SoftAssert();
-	 
-	public WebDriver getDriver() {
-		return driver;
-		
-	}
+	 private SoftAssert softAssert  = new SoftAssert();
 
+	
 	/**
 	 * @throws InterruptedException
 	 * @throws MalformedURLException
@@ -36,8 +32,8 @@ public class R0011BrokenLinkVerification {
 	@Test(priority = 1, description = "R0011-TC01 CareFirst homepage link test")
 	public void testBrokenLink() throws InterruptedException, MalformedURLException, IOException {
 
-		InitialComponents initialcomponent = new InitialComponents();
-		driver = initialcomponent.launchBrowser();
+		
+		driver = InitialComponents.launchBrowser();
 		driver.get("https://individual.carefirst.com/individuals-families/plans-coverage/medical/medicaid-plans.page");
 
 	
@@ -94,42 +90,41 @@ public class R0011BrokenLinkVerification {
 
 	@Test(priority=0)
 	public void testBrokenListUsingHttpsURLConnection() throws MalformedURLException, IOException {
-	InitialComponents initialComponents = new InitialComponents();
-		driver = initialComponents.launchBrowser();
+	driver = InitialComponents.launchBrowser();
 		driver.get("https://www.ebay.com");
 		// get all the footer link in a list of web element
-		List<WebElement> url = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
-		System.out.println( "total link " + url.size());
+		List<WebElement> allFooterUrls = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
+		System.out.println( "total link " + allFooterUrls.size());
 		List<String> brokenLink =new ArrayList<String>();
 		
 		int i;
-			for (i =0; i<url.size(); i++) {
-				String url1 = url.get(i).getAttribute("href");
-				HttpsURLConnection connection = (HttpsURLConnection) new URL(url1).openConnection();
-				connection.setRequestMethod("HEAD");
-				connection.connect();
-				int responseCode = connection.getResponseCode();
-				System.out.println(i+1 + " = \" "+ url.get(i).getText() + "\"  Status code "+ responseCode);
+			for (i =0; i<allFooterUrls.size(); i++) {
+				String url = allFooterUrls.get(i).getAttribute("href");
+				HttpsURLConnection urlConnection = (HttpsURLConnection) new URL(url).openConnection();
+				urlConnection.setRequestMethod("HEAD");
+				urlConnection.connect();
+				int responseCode = urlConnection.getResponseCode();
+				System.out.println(i+1 + " = \" "+ allFooterUrls.get(i).getText() + "\"  Status code "+ responseCode);
 				if (responseCode>400) {
-					brokenLink.add(url.get(i).getText());
+					brokenLink.add(allFooterUrls.get(i).getText());
 				}
 				if (i==32) {
-					SoftAssert.assertTrue(false);
+					// intentionally failing the test 
+					softAssert.assertTrue(false);
 				}
 			}
 		System.out.println("Total broken link "+brokenLink.size());
 		brokenLink.stream().forEach(b->System.out.println(b));
-		SoftAssert.assertAll();
+		softAssert.assertAll();
 		}
 	
-		@AfterMethod
+		@AfterTest 
 		public void quitBrowser() {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
-			}
-			
+			}		
 			driver.quit();
 		}
 	}

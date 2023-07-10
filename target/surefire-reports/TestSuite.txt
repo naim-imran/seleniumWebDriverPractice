@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 58.304 s <<< FAILURE! - in TestSuite
-testBrokenListUsingHttpsURLConnection(webDriverPractice.test.R0011BrokenLinkVerification)  Time elapsed: 16.986 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:117)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.706 s - in TestSuite

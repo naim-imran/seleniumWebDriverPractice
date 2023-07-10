@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="9" passed="2" failed="1" skipped="0">
+<testng-results retried="3" ignored="3" total="8" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-09T20:35:09 EDT" name="Parallel Suite" finished-at="2023-07-09T20:36:43 EDT" duration-ms="93838">
+  <suite started-at="2023-07-10T18:18:52 EDT" name="WebDriverTest" finished-at="2023-07-10T18:23:21 EDT" duration-ms="268837">
     <groups>
     </groups>
-    <test started-at="2023-07-09T20:35:09 EDT" name="Test2" finished-at="2023-07-09T20:35:40 EDT" duration-ms="31052">
+    <test started-at="2023-07-10T18:18:52 EDT" name="Test" finished-at="2023-07-10T18:23:21 EDT" duration-ms="268837">
       <class name="webDriverPractice.test.R0008TakeScreenShots">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6f4a47c7]" started-at="2023-07-09T20:35:09 EDT" name="setupInitialComponents" finished-at="2023-07-09T20:35:20 EDT" duration-ms="11175" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:18:52 EDT" name="setupInitialComponents" finished-at="2023-07-10T18:19:19 EDT" duration-ms="27132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="selenium4testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6f4a47c7]" started-at="2023-07-09T20:35:20 EDT" name="selenium4testTakeScreenShot" description="R0008-TC01 take screenShot of an webElement" finished-at="2023-07-09T20:35:21 EDT" duration-ms="554" status="PASS">
+        <test-method signature="selenium4testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:19:19 EDT" name="selenium4testTakeScreenShot" description="R0008-TC01 take screenShot of an webElement" finished-at="2023-07-10T18:19:23 EDT" duration-ms="3284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selenium4testTakeScreenShot -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6f4a47c7]" started-at="2023-07-09T20:35:21 EDT" name="quitBrowser" finished-at="2023-07-09T20:35:26 EDT" duration-ms="5954" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:19:23 EDT" name="quitBrowser" finished-at="2023-07-10T18:19:40 EDT" duration-ms="17185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6f4a47c7]" started-at="2023-07-09T20:35:26 EDT" name="setupInitialComponents" finished-at="2023-07-09T20:35:34 EDT" duration-ms="7104" status="PASS">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:19:40 EDT" name="setupInitialComponents" finished-at="2023-07-10T18:20:07 EDT" duration-ms="27399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6f4a47c7]" started-at="2023-07-09T20:35:34 EDT" name="testTakeScreenShot" description="R0008-TC01 take screenShot of ebay Home page" finished-at="2023-07-09T20:35:37 EDT" duration-ms="3163" status="PASS">
+        <test-method signature="testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:20:07 EDT" name="testTakeScreenShot" description="R0008-TC01 take screenShot of ebay Home page" finished-at="2023-07-10T18:20:19 EDT" duration-ms="11481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTakeScreenShot -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6f4a47c7]" started-at="2023-07-09T20:35:37 EDT" name="quitBrowser" finished-at="2023-07-09T20:35:40 EDT" duration-ms="3021" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:20:19 EDT" name="quitBrowser" finished-at="2023-07-10T18:20:22 EDT" duration-ms="3022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- webDriverPractice.test.R0008TakeScreenShots -->
-    </test> <!-- Test2 -->
-    <test started-at="2023-07-09T20:35:09 EDT" name="Test" finished-at="2023-07-09T20:36:43 EDT" duration-ms="93838">
       <class name="webDriverPractice.test.R0011BrokenLinkVerification">
-        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:35:09 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-09T20:35:37 EDT" duration-ms="28042" status="SKIP">
+        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:18:52 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-10T18:20:08 EDT" duration-ms="76271" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -46,7 +44,7 @@ expected [true] but found [false]]]>
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:122)
+at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,13 +57,6 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
@@ -75,11 +66,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:35:37 EDT" name="quitBrowser" finished-at="2023-07-09T20:35:40 EDT" duration-ms="3291" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:35:40 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-09T20:35:57 EDT" duration-ms="16434" status="SKIP">
+        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:20:09 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-10T18:20:56 EDT" duration-ms="47917" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -92,7 +79,7 @@ expected [true] but found [false],
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:122)
+at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,13 +92,6 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
@@ -121,11 +101,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:35:57 EDT" name="quitBrowser" finished-at="2023-07-09T20:36:00 EDT" duration-ms="3078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:36:00 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-09T20:36:17 EDT" duration-ms="17771" status="SKIP">
+        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:20:56 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-10T18:21:49 EDT" duration-ms="52898" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -140,7 +116,7 @@ expected [true] but found [false],
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:122)
+at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,13 +129,6 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
@@ -169,61 +138,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:36:17 EDT" name="quitBrowser" finished-at="2023-07-09T20:36:20 EDT" duration-ms="2984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:36:20 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-09T20:36:39 EDT" duration-ms="18928" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [true] but found [false],
-expected [true] but found [false],
-expected [true] but found [false],
-expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false],
-expected [true] but found [false],
-expected [true] but found [false],
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:122)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@6a6cb05c]" started-at="2023-07-09T20:36:39 EDT" name="quitBrowser" finished-at="2023-07-09T20:36:43 EDT" duration-ms="3214" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:23:20 EDT" name="quitBrowser" finished-at="2023-07-10T18:23:21 EDT" duration-ms="1059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- webDriverPractice.test.R0011BrokenLinkVerification -->
     </test> <!-- Test -->
-  </suite> <!-- Parallel Suite -->
+  </suite> <!-- WebDriverTest -->
 </testng-results>
