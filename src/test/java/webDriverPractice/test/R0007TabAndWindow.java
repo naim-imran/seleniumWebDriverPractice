@@ -1,11 +1,5 @@
 package webDriverPractice.test;
 
-import org.testng.annotations.Test;
-
-import webDriverPractice.utilities.InitialComponents;
-
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.util.Iterator;
 
 import org.openqa.selenium.By;
@@ -14,6 +8,8 @@ import org.openqa.selenium.WindowType;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import webDriverPractice.utilities.InitialComponents;
 
 public class R0007TabAndWindow {
 	private WebDriver driver;

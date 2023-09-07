@@ -6,7 +6,7 @@
 	  <parameter name="url" value="www.ebay.com"></parameter>
 	  <parameter name="user" value="naim"></parameter>
     <classes>
-      <class name="webDriverPractice.test.parameterizationWithXML"/>
+      <class name="webDriverPractice.test.ParameterizationWithXML"/>
     </classes>
   </test> <!-- Test -->
   

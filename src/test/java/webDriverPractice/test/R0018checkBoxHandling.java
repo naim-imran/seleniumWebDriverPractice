@@ -1,20 +1,13 @@
 package webDriverPractice.test;
 
-import org.testng.annotations.Test;
-
-import webDriverPractice.utilities.InitialComponents;
-
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import webDriverPractice.utilities.InitialComponents;
 
 public class R0018checkBoxHandling {
 	WebDriver driver;

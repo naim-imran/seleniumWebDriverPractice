@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+     
+      <class name="webDriverPractice.test.R0015WebTableHandling"/>
+      <class name="webDriverPractice.test.R0007TabAndWindow"/>
+      <class name="webDriverPractice.test.R0015_WebTableHandling"/>
+      <class name="webDriverPractice.test.R0014JavaScriptExecutor"/>
+      <class name="webDriverPractice.test.R0005DrawBorder"/>
+      <class name="webDriverPractice.test.R0022gettingDataFromJsonFile"/>
+      <class name="webDriverPractice.test.R0011BrokenLinkVerification"/>
+      <class name="webDriverPractice.test.R0004DropDown"/>
+      <class name="webDriverPractice.test.R0018checkBoxHandling"/>
+      <class name="webDriverPractice.test.R0017ReadExcelData"/>
+      <class name="webDriverPractice.test.R0006AlertClass"/>
+      <class name="webDriverPractice.test.R0010ActionsClass"/>
+      <class name="webDriverPractice.test.R0013PropertiesClass"/>
+      <class name="webDriverPractice.test.R0003CSSselector"/>
+      <class name="webDriverPractice.test.R0016CalederHandling"/>
+      <class name="webDriverPractice.test.R0001LocatorsTest"/>
+      <class name="webDriverPractice.test.R0009Synchronization"/>
+      <class name="webDriverPractice.test.R0012SecurityCertification"/>
+      <class name="webDriverPractice.test.R0008TakeScreenShots"/>
+      <class name="webDriverPractice.test.R0002RelativeXpath"/>
+      <class name="webDriverPractice.test.R0024ChromeDevTool"/>
+      <class name="webDriverPractice.test.R0019ThreadSafeDriver"/>
+      <class name="webDriverPractice.test.R0023extendReport"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

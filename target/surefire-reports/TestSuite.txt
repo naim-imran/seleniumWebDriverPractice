@@ -1,4 +1,104 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.706 s - in TestSuite
+Tests run: 90, Failures: 15, Errors: 0, Skipped: 44, Time elapsed: 473.073 s <<< FAILURE! - in TestSuite
+setup(webDriverPractice.test.R0017ReadExcelData)  Time elapsed: 0.022 s  <<< FAILURE!
+java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+	at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:20)
+
+setupInitialComponents(webDriverPractice.test.R0008TakeScreenShots)  Time elapsed: 0.16 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0008TakeScreenShots.setupInitialComponents(R0008TakeScreenShots.java:25)
+
+setupInitialComponents(webDriverPractice.test.R0006AlertClass)  Time elapsed: 0.129 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0006AlertClass.setupInitialComponents(R0006AlertClass.java:16)
+
+setupInitialComponents(webDriverPractice.test.R0018checkBoxHandling)  Time elapsed: 2.492 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0018checkBoxHandling.setupInitialComponents(R0018checkBoxHandling.java:18)
+
+setupInitialComponents(webDriverPractice.test.R0007TabAndWindow)  Time elapsed: 3.47 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0007TabAndWindow.setupInitialComponents(R0007TabAndWindow.java:20)
+
+quitDriver(webDriverPractice.test.RelativeXpath)  Time elapsed: 3.116 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to stop.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48301ffe7c5209cf6b81a5f6153e384b, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52400/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48301ffe7c5209cf6b81a5f6153e384b
+	at webDriverPractice.test.RelativeXpath.quitDriver(RelativeXpath.java:60)
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+	at webDriverPractice.test.RelativeXpath.quitDriver(RelativeXpath.java:60)
+Caused by: org.openqa.selenium.TimeoutException: 
+Process timed out after waiting for 20000 ms.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+
+setupInitialComponents(webDriverPractice.test.R0005DrawBorder)  Time elapsed: 7.719 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0005DrawBorder.setupInitialComponents(R0005DrawBorder.java:18)
+
+setupInitialComponents(webDriverPractice.test.R0004DropDown)  Time elapsed: 1.225 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0004DropDown.setupInitialComponents(R0004DropDown.java:25)
+
+setupInitialComponents(webDriverPractice.test.R0009Synchronization)  Time elapsed: 2.986 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0009Synchronization.setupInitialComponents(R0009Synchronization.java:24)
+
+setupInitialComponents(webDriverPractice.test.R0015WebTableHandling)  Time elapsed: 8.427 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0015WebTableHandling.setupInitialComponents(R0015WebTableHandling.java:18)
+
+setupInitialComponents(webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling)  Time elapsed: 1.545 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.setupInitialComponents(R0016CalederHandling.java:35)
+
+setupInitialComponents(webDriverPractice.test.R0014JavaScriptExecutor)  Time elapsed: 1.846 s  <<< FAILURE!
+java.lang.IllegalArgumentException: http://:-1/json/version could not be parsed into a proper Uri, missing host
+	at webDriverPractice.test.R0014JavaScriptExecutor.setupInitialComponents(R0014JavaScriptExecutor.java:17)
+
+quitBrowser(webDriverPractice.test.R0012SecurityCertification)  Time elapsed: 1.908 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to stop.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21639748539045a76f66a34bfdcfa923, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52424/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21639748539045a76f66a34bfdcfa923
+	at webDriverPractice.test.R0012SecurityCertification.quitBrowser(R0012SecurityCertification.java:60)
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+	at webDriverPractice.test.R0012SecurityCertification.quitBrowser(R0012SecurityCertification.java:60)
+Caused by: org.openqa.selenium.TimeoutException: 
+Process timed out after waiting for 20000 ms.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+
+quitBrowser(webDriverPractice.test.R0010ActionsClass)  Time elapsed: 3.025 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+	at webDriverPractice.test.R0010ActionsClass.quitBrowser(R0010ActionsClass.java:75)
+
+quitBrowser(webDriverPractice.test.R0011BrokenLinkVerification)  Time elapsed: 298.141 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Thread safety error; this instance of WebDriver was constructed on thread TestNG-test=Test-4 (id 25) and is being accessed by thread main (id 1)This is not permitted and *will* cause undefined behaviour
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+	at webDriverPractice.test.R0011BrokenLinkVerification.quitBrowser(R0011BrokenLinkVerification.java:129)
+

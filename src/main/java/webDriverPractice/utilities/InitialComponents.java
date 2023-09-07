@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -14,16 +13,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class InitialComponents {
-	private ExtentSparkReporter reporter;
-	private static ExtentReports logReport;
-	private String time = InitialComponents.getCurrentTimeToFormatedString();
-	public static WebDriver driver;
+	
+	
+	private WebDriver driver;
 	static Properties prop;
 	static boolean insesureCertificate = false;
 	
@@ -40,7 +35,7 @@ public class InitialComponents {
 		}
 		return prop;
 	}
-	public static synchronized WebDriver launchBrowser() {
+	public synchronized WebDriver launchBrowser() {
 		if (getConfigData().getProperty("insecureCertificate").equalsIgnoreCase("true")) {
 			insesureCertificate = true;
 		}
@@ -48,12 +43,13 @@ public class InitialComponents {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser"): getConfigData().getProperty("browser");
 		
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			
 			ChromeOptions co = new ChromeOptions();
+			co.setBrowserVersion("117");
 
-			co.addArguments("--remote-allow-origins=*");
+			//co.addArguments("--remote-allow-origins=*");
 			co.setAcceptInsecureCerts(insesureCertificate);
-			co.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
+			//co.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
 
 			driver = new ChromeDriver(co);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -61,7 +57,7 @@ public class InitialComponents {
 			driver.manage().window().maximize();
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+		
 			FirefoxOptions fo = new FirefoxOptions();
 
 			fo.setAcceptInsecureCerts(insesureCertificate);
@@ -88,25 +84,13 @@ public class InitialComponents {
 		return null;
 	}
 
-	public static String getCurrentTimeToFormatedString() {
+	public String getCurrentTimeToFormatedString() {
 		//return LocalTime.now().toString();
 		String currentTime = LocalDateTime.now().toString();
 		return ((currentTime.replace(".", "_")).replace(":", "_"));
 	}
 
-	public InitialComponents() {
-		reporter = new ExtentSparkReporter(System.getProperty("user.dir")+ "\\src\\test\\java\\extentReports\\"+time+".html");
-		reporter.config().setDocumentTitle("Title seleniumWebDriverPractice");
-		reporter.config().setReportName("Report name " + time);
-
-		logReport = new ExtentReports();
-		logReport.attachReporter(reporter);
-		logReport.setSystemInfo("Operating System ", System.getProperty("os.name"));
-	}
-
-	public static ExtentReports getReport() {
-		return logReport;
-	}
+	
 
 	
 }

@@ -8,6 +8,7 @@ import org.testng.annotations.ITestAnnotation;
 
 public class RerunFailedTestTransformer implements IAnnotationTransformer{
 
+	@SuppressWarnings("rawtypes")
 	@Override
 	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor,Method testMethod) {
 		annotation.setRetryAnalyzer(Retry.class);

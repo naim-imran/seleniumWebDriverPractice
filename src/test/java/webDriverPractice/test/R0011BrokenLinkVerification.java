@@ -17,9 +17,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import webDriverPractice.utilities.InitialComponents;
-
-public class R0011BrokenLinkVerification extends InitialComponents {
+public class R0011BrokenLinkVerification extends ThreadSafeDriver {
 	public  WebDriver driver;
 	 private SoftAssert softAssert  = new SoftAssert();
 
@@ -33,7 +31,7 @@ public class R0011BrokenLinkVerification extends InitialComponents {
 	public void testBrokenLink() throws InterruptedException, MalformedURLException, IOException {
 
 		
-		driver = InitialComponents.launchBrowser();
+		driver = launchBrowser();
 		driver.get("https://individual.carefirst.com/individuals-families/plans-coverage/medical/medicaid-plans.page");
 
 	
@@ -90,7 +88,7 @@ public class R0011BrokenLinkVerification extends InitialComponents {
 
 	@Test(priority=0)
 	public void testBrokenListUsingHttpsURLConnection() throws MalformedURLException, IOException {
-	driver = InitialComponents.launchBrowser();
+	driver = launchBrowser();
 		driver.get("https://www.ebay.com");
 		// get all the footer link in a list of web element
 		List<WebElement> allFooterUrls = driver.findElements(By.xpath("//footer[@id='glbfooter'and @class='gh-w']//a[@class='thrd']"));
@@ -110,7 +108,8 @@ public class R0011BrokenLinkVerification extends InitialComponents {
 				}
 				if (i==32) {
 					// intentionally failing the test 
-					softAssert.assertTrue(false);
+					
+					quitBrowser();
 				}
 			}
 		System.out.println("Total broken link "+brokenLink.size());

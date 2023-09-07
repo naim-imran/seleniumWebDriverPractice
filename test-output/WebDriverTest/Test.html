@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>46/0/5</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 10 18:18:52 EDT 2023</td>
+<td>Started on:</td><td>Wed Sep 06 22:46:00 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>268 seconds (268837 ms)</td>
+<tr><td>Total time:</td><td>631 seconds (631166 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,203 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webDriverPractice.test.R0011BrokenLinkVerification.quitBrowser()'><b>quitBrowser</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Thread safety error; this instance of WebDriver was constructed on thread TestNG-test=Test-3 (id 23) and is being accessed by thread main (id 1)This is not permitted and *will* cause undefined behaviour
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.quit(Unknown Source)
+	at webDriverPractice.test.R0011BrokenLinkVerification.quitBrowser(R0011BrokenLinkVerification.java:127)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace350059321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace350059321'><pre>org.openqa.selenium.WebDriverException: Thread safety error; this instance of WebDriver was constructed on thread TestNG-test=Test-3 (id 23) and is being accessed by thread main (id 1)This is not permitted and *will* cause undefined behaviour
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.quit(Unknown Source)
+	at webDriverPractice.test.R0011BrokenLinkVerification.quitBrowser(R0011BrokenLinkVerification.java:127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.afterRun(TestRunner.java:933)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>webDriverPractice.test.R0011BrokenLinkVerification@18271936</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.setupInitialComponents()'><b>setupInitialComponents</b><br>Test class: webDriverPractice.test.Locators</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.get(Unknown Source)
+	at webDriverPractice.test.Locators.setupInitialComponents(Locators.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904930467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904930467'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.get(Unknown Source)
+	at webDriverPractice.test.Locators.setupInitialComponents(Locators.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 35 more
+</pre></div></td>
+<td>189</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0017ReadExcelData.setup()'><b>setup</b><br>Test class: webDriverPractice.test.R0017ReadExcelData</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2031289273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2031289273'><pre>java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>webDriverPractice.test.R0017ReadExcelData@48075da3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webDriverPractice.test.R0023extendReport.cleanTestBed()'><b>cleanTestBed</b><br>Test class: webDriverPractice.test.R0023extendReport</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0023extendReport@5032714f</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.quitBrowser()'><b>quitBrowser</b><br>Test class: webDriverPractice.test.Locators</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,15 +273,235 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='webDriverPractice.test.R0008TakeScreenShots.testTakeScreenShot()'><b>testTakeScreenShot</b><br>Test class: webDriverPractice.test.R0008TakeScreenShots<br>Test method: R0008-TC01 take screenShot of ebay Home page</td>
+<td title='webDriverPractice.test.R0009Synchronization.testWebDriverWait()'><b>testWebDriverWait</b><br>Test class: webDriverPractice.test.R0009Synchronization<br>Test method: R0009-TC002 wait 10 seconds for text "Introducing watches expert verification" using WebDriverWait()</td>
 <td></td>
-<td>11</td>
-<td>webDriverPractice.test.R0008TakeScreenShots@6574a52c</td></tr>
+<td>137</td>
+<td>webDriverPractice.test.R0009Synchronization@5b218417</td></tr>
 <tr>
-<td title='webDriverPractice.test.R0008TakeScreenShots.selenium4testTakeScreenShot()'><b>selenium4testTakeScreenShot</b><br>Test class: webDriverPractice.test.R0008TakeScreenShots<br>Test method: R0008-TC01 take screenShot of an webElement</td>
+<td title='webDriverPractice.test.Locators.name_LocatorTest()'><b>name_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC002 expand catagory filter list by using name locator</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0011BrokenLinkVerification.testThreadSafeDriver()'><b>testThreadSafeDriver</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification</td>
+<td></td>
+<td>14</td>
+<td>webDriverPractice.test.R0011BrokenLinkVerification@18271936</td></tr>
+<tr>
+<td title='webDriverPractice.test.RelativeXpath.parentToChildTestUsingForwardSlash()'><b>parentToChildTestUsingForwardSlash</b><br>Test class: webDriverPractice.test.RelativeXpath<br>Test method: R0002-TC002 traversing from parent to child node using( ForwardSlash ) </td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.RelativeXpath@16eb3ea3</td></tr>
+<tr>
+<td title='webDriverPractice.test.RelativeXpath.testUsingFollowingsibkingByXpath()'><b>testUsingFollowingsibkingByXpath</b><br>Test class: webDriverPractice.test.RelativeXpath<br>Test method: R0002-TC005 locate "Shop by catagory" using following-sibling:: concept by xpath</td>
+<td></td>
+<td>1</td>
+<td>webDriverPractice.test.RelativeXpath@16eb3ea3</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0003CSSselector.testCssSelectorWithPartialText()'><b>testCssSelectorWithPartialText</b><br>Test class: webDriverPractice.test.R0003CSSselector<br>Test method: TC015 locate "search" using partial text of an attribute value using regular expression by CssSelector</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0003CSSselector@7a35b0f5</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.tagName_LocatorTest()'><b>tagName_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC003 print number of input tag present in the DOM by tagName</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0012SecurityCertification.devToolsTest()'><b>devToolsTest</b><br>Test class: webDriverPractice.test.R0012SecurityCertification<br>Test method: validate the SSL certification using chrome DecTool</td>
+<td></td>
+<td>9</td>
+<td>webDriverPractice.test.R0012SecurityCertification@6caf0677</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection()'><b>testBrokenListUsingHttpsURLConnection</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification</td>
+<td></td>
+<td>85</td>
+<td>webDriverPractice.test.R0011BrokenLinkVerification@18271936</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0013PropertiesClass.propertiesFileTest()'><b>propertiesFileTest</b><br>Test class: webDriverPractice.test.R0013PropertiesClass</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0013PropertiesClass@5e2c3d18</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0009Synchronization.testImplicitlyWait()'><b>testImplicitlyWait</b><br>Test class: webDriverPractice.test.R0009Synchronization<br>Test method: R0009-TC001 set global wait time using implicitlyWait()</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0009Synchronization@5b218417</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.id_LocatorTest()'><b>id_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC001 locate ebay logo by ID</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.ThreadSafeDriver.testThreadSafeDriver()'><b>testThreadSafeDriver</b><br>Test class: webDriverPractice.test.ThreadSafeDriver</td>
+<td></td>
+<td>13</td>
+<td>webDriverPractice.test.ThreadSafeDriver@33bc72d1</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.className_LocatorTest()'><b>className_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC006 click on search button using className locator</td>
+<td></td>
+<td>14</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0023extendReport.testExtentReport03()'><b>testExtentReport03</b><br>Test class: webDriverPractice.test.R0023extendReport</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0023extendReport@5032714f</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0012SecurityCertification.testThreadSafeDriver()'><b>testThreadSafeDriver</b><br>Test class: webDriverPractice.test.R0012SecurityCertification</td>
+<td></td>
+<td>12</td>
+<td>webDriverPractice.test.R0012SecurityCertification@6caf0677</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.partialLinkText_LocatorTest()'><b>partialLinkText_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC008 click on "Home & Garden" link button using partialLink locator</td>
+<td></td>
+<td>5</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0024ChromeDevTool.openBrowserInMobileView()'><b>openBrowserInMobileView</b><br>Test class: webDriverPractice.test.R0024ChromeDevTool</td>
+<td></td>
+<td>4</td>
+<td>webDriverPractice.test.R0024ChromeDevTool@273444fe</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0009Synchronization.testFluentWait()'><b>testFluentWait</b><br>Test class: webDriverPractice.test.R0009Synchronization<br>Test method: R0009-TC003 wait for 20 seconds at interval of 3 seconds to locate "Get Your Things" link button</td>
+<td></td>
+<td>9</td>
+<td>webDriverPractice.test.R0009Synchronization@5b218417</td></tr>
+<tr>
+<td title='webDriverPractice.test.TakeScreenShots.selenium4testTakeScreenShot()'><b>selenium4testTakeScreenShot</b><br>Test class: webDriverPractice.test.TakeScreenShots<br>Test method: R0008-TC01 take screenShot of an webElement</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.TakeScreenShots@413d1baf</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.relativeLocator_above()'><b>relativeLocator_above</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC009 click on "sign in" link button using relative locator above()</td>
+<td></td>
+<td>4</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0010ActionsClass.testMouseHover()'><b>testMouseHover</b><br>Test class: webDriverPractice.test.R0010ActionsClass<br>Test method: R0010-TC001 hover mouse on "Hello, sign in, Account & List"</td>
+<td></td>
+<td>22</td>
+<td>webDriverPractice.test.R0010ActionsClass@2cb4893b</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0004DropDown.testDynamicDropDownList()'><b>testDynamicDropDownList</b><br>Test class: webDriverPractice.test.R0004DropDown<br>Test method: A004-TC002 test "Search Box" with auto suggestive dropdown</td>
 <td></td>
 <td>3</td>
-<td>webDriverPractice.test.R0008TakeScreenShots@6574a52c</td></tr>
+<td>webDriverPractice.test.R0004DropDown@606e4010</td></tr>
+<tr>
+<td title='webDriverPractice.test.ParameterizationWithJsonFile.printJsonData()'><b>printJsonData</b><br>Test class: webDriverPractice.test.ParameterizationWithJsonFile</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.ParameterizationWithJsonFile@28261e8e</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0015WebTableHandling.testdynamicWebTable()'><b>testdynamicWebTable</b><br>Test class: webDriverPractice.test.R0015WebTableHandling<br>Test method: R0015-TC001 get the data from table01</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0015WebTableHandling@75437611</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0010ActionsClass.keyboardInteractionTest()'><b>keyboardInteractionTest</b><br>Test class: webDriverPractice.test.R0010ActionsClass<br>Test method: R0010-TC002 Type "razer blade" in capital in search edit box</td>
+<td></td>
+<td>11</td>
+<td>webDriverPractice.test.R0010ActionsClass@2cb4893b</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.linkText_LocatorTest()'><b>linkText_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC007 click on Electronics link button using linkTest locator</td>
+<td></td>
+<td>21</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.relativeLocatorBelow()'><b>relativeLocatorBelow</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC010 click on "Advance" link below cart using relative locator below()</td>
+<td></td>
+<td>8</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0018checkBoxHandling.testCheckBox()'><b>testCheckBox</b><br>Test class: webDriverPractice.test.R0018checkBoxHandling<br>Test method: TC-001 check the correctness of filter check box</td>
+<td></td>
+<td>16</td>
+<td>webDriverPractice.test.R0018checkBoxHandling@8458f04</td></tr>
+<tr>
+<td title='webDriverPractice.test.DrawBorderAroundElement.testDrawBorder()'><b>testDrawBorder</b><br>Test class: webDriverPractice.test.DrawBorderAroundElement<br>Test method: R0006-TC001 draw border around the "Search box"</td>
+<td></td>
+<td>12</td>
+<td>webDriverPractice.test.DrawBorderAroundElement@17f9d882</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0010ActionsClass.testkeyboardInteraction01()'><b>testkeyboardInteraction01</b><br>Test class: webDriverPractice.test.R0010ActionsClass<br>Test method: R0010-TC004 Type "laptop" in capital in search edit box using "Keys.chord("laptop")" </td>
+<td></td>
+<td>15</td>
+<td>webDriverPractice.test.R0010ActionsClass@2cb4893b</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0012SecurityCertification.securityCertificates()'><b>securityCertificates</b><br>Test class: webDriverPractice.test.R0012SecurityCertification<br>Test method: validate the SSL certification using chromeOptions class</td>
+<td></td>
+<td>1</td>
+<td>webDriverPractice.test.R0012SecurityCertification@6caf0677</td></tr>
+<tr>
+<td title='webDriverPractice.test.RelativeXpath.testUsingContainsMethodWithxpath()'><b>testUsingContainsMethodWithxpath</b><br>Test class: webDriverPractice.test.RelativeXpath<br>Test method: R0002-TC003 locating search box using partial text of an attribute value by xpath </td>
+<td></td>
+<td>2</td>
+<td>webDriverPractice.test.RelativeXpath@16eb3ea3</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0014JavaScriptExecutor.testJavaScriptExecutor()'><b>testJavaScriptExecutor</b><br>Test class: webDriverPractice.test.R0014JavaScriptExecutor<br>Test method: locate search box and enter laptops using javaScripptxecutor</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0014JavaScriptExecutor@1c5920df</td></tr>
+<tr>
+<td title='webDriverPractice.test.RelativeXpath.parentToChildTestUsingChild()'><b>parentToChildTestUsingChild</b><br>Test class: webDriverPractice.test.RelativeXpath<br>Test method: R0002-TC001 traversing from parent to child node using( child:: ) </td>
+<td></td>
+<td>7</td>
+<td>webDriverPractice.test.RelativeXpath@16eb3ea3</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.cssSelector_LocatorTest()'><b>cssSelector_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC005 type "mobile" in search textbox by cssSelector</td>
+<td></td>
+<td>2</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0023extendReport.testExtentReport()'><b>testExtentReport</b><br>Test class: webDriverPractice.test.R0023extendReport</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0023extendReport@5032714f</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0018checkBoxHandling.testRadioButton()'><b>testRadioButton</b><br>Test class: webDriverPractice.test.R0018checkBoxHandling<br>Test method: TC-002 check the correctness of Radio button</td>
+<td></td>
+<td>24</td>
+<td>webDriverPractice.test.R0018checkBoxHandling@8458f04</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0011BrokenLinkVerification.testBrokenLink()'><b>testBrokenLink</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification<br>Test method: R0011-TC01 CareFirst homepage link test</td>
+<td></td>
+<td>441</td>
+<td>webDriverPractice.test.R0011BrokenLinkVerification@18271936</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0004DropDown.testDropdownUsingSelectClass()'><b>testDropdownUsingSelectClass</b><br>Test class: webDriverPractice.test.R0004DropDown<br>Test method: R0004-TC001 select "Cell Phones & Accessories" from Select  Dropdown using Select class</td>
+<td></td>
+<td>14</td>
+<td>webDriverPractice.test.R0004DropDown@606e4010</td></tr>
+<tr>
+<td title='webDriverPractice.test.TakeScreenShots.testTakeScreenShot()'><b>testTakeScreenShot</b><br>Test class: webDriverPractice.test.TakeScreenShots<br>Test method: R0008-TC01 take screenShot of ebay Home page</td>
+<td></td>
+<td>3</td>
+<td>webDriverPractice.test.TakeScreenShots@413d1baf</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0007TabAndWindow.testChildWindowHandle()'><b>testChildWindowHandle</b><br>Test class: webDriverPractice.test.R0007TabAndWindow<br>Test method: R0007-TC01 Open "Help & Contacts" in new window</td>
+<td></td>
+<td>14</td>
+<td>webDriverPractice.test.R0007TabAndWindow@350aac89</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0023extendReport.testExtentReport2()'><b>testExtentReport2</b><br>Test class: webDriverPractice.test.R0023extendReport</td>
+<td></td>
+<td>0</td>
+<td>webDriverPractice.test.R0023extendReport@5032714f</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0006AlertClass.alertClassTest()'><b>alertClassTest</b><br>Test class: webDriverPractice.test.R0006AlertClass<br>Test method: R0006-TC01 accept window alert</td>
+<td></td>
+<td>10</td>
+<td>webDriverPractice.test.R0006AlertClass@68c9133c</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0010ActionsClass.TestDragNDrop()'><b>TestDragNDrop</b><br>Test class: webDriverPractice.test.R0010ActionsClass<br>Test method: R0010-TC003 test the drag funtionality of dragable box</td>
+<td></td>
+<td>5</td>
+<td>webDriverPractice.test.R0010ActionsClass@2cb4893b</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0020FrameAndDragNDropDemo.testFrame()'><b>testFrame</b><br>Test class: webDriverPractice.test.R0020FrameAndDragNDropDemo<br>Test method: R0020-TC01 testing the functionality of "frame" concept</td>
+<td></td>
+<td>7</td>
+<td>webDriverPractice.test.R0020FrameAndDragNDropDemo@7d0b7e3c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -95,55 +512,68 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection()'><b>testBrokenListUsingHttpsURLConnection</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false],
-	expected [true] but found [false],
-	expected [true] but found [false]
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+<td title='webDriverPractice.test.RelativeXpath.testUsingParentKeywordByXpath()'><b>testUsingParentKeywordByXpath</b><br>Test class: webDriverPractice.test.RelativeXpath<br>Test method: R0002-TC006 locate " Motor " link using parent:: concept by xpath</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;hl-cat-nav__expander&apos;]/parent::li[@class=&apos;hl-cat-nav__js-tab&apos;]/child::a[@href=&apos;https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334&apos;]&quot;}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be32028c69dec56f33433564014114d0, findElement {using=xpath, value=//div[@class=&apos;hl-cat-nav__expander&apos;]/parent::li[@class=&apos;hl-cat-nav__js-tab&apos;]/child::a[@href=&apos;https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51392/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be32028c69dec56f33433564014114d0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+	at webDriverPractice.test.RelativeXpath.testUsingParentKeywordByXpath(RelativeXpath.java:53)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace129427094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace129427094'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false],
-	expected [true] but found [false],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace207857555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace207857555'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;hl-cat-nav__expander&apos;]/parent::li[@class=&apos;hl-cat-nav__js-tab&apos;]/child::a[@href=&apos;https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334&apos;]&quot;}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be32028c69dec56f33433564014114d0, findElement {using=xpath, value=//div[@class=&apos;hl-cat-nav__expander&apos;]/parent::li[@class=&apos;hl-cat-nav__js-tab&apos;]/child::a[@href=&apos;https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51392/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be32028c69dec56f33433564014114d0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>52</td>
-<td>webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5</td></tr>
-<tr>
-<td title='webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection()'><b>testBrokenListUsingHttpsURLConnection</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1911493880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1911493880'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+	at webDriverPractice.test.RelativeXpath.testUsingParentKeywordByXpath(RelativeXpath.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,32 +590,71 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>76</td>
-<td>webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5</td></tr>
+<td>12</td>
+<td>webDriverPractice.test.RelativeXpath@16eb3ea3</td></tr>
 <tr>
-<td title='webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection()'><b>testBrokenListUsingHttpsURLConnection</b><br>Test class: webDriverPractice.test.R0011BrokenLinkVerification</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false],
-	expected [true] but found [false]
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+<td title='webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.testDynamicCalendar()'><b>testDynamicCalendar</b><br>Test class: webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling<br>Test method: Select a date from calender</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;d1-btn&apos;]&quot;}
+  (Session info: chrome=117.0.5938.48)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9017d97355463000bc337a712804e56c, findElement {using=xpath, value=//button[@id=&apos;d1-btn&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.48, chrome: {chromedriverVersion: 117.0.5938.48 (bde8a58d4100..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53009/devtoo..., se:cdpVersion: 117.0.5938.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9017d97355463000bc337a712804e56c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.pickDateExpediaCalender(R0016CalederHandling.java:18)
+	at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.testDynamicCalendar(R0016CalederHandling.java:55)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892402417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1892402417'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false],
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176137754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176137754'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;d1-btn&apos;]&quot;}
+  (Session info: chrome=117.0.5938.48)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9017d97355463000bc337a712804e56c, findElement {using=xpath, value=//button[@id=&apos;d1-btn&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.48, chrome: {chromedriverVersion: 117.0.5938.48 (bde8a58d4100..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53009/devtoo..., se:cdpVersion: 117.0.5938.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9017d97355463000bc337a712804e56c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.pickDateExpediaCalender(R0016CalederHandling.java:18)
+	at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.testDynamicCalendar(R0016CalederHandling.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -194,8 +663,200 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>47</td>
-<td>webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5</td></tr>
+<td>11</td>
+<td>webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling@cc43f62</td></tr>
+<tr>
+<td title='webDriverPractice.test.Locators.xpath_LocatorTest()'><b>xpath_LocatorTest</b><br>Test class: webDriverPractice.test.Locators<br>Test method: TC004 type "laptops" in search textbox by xpath</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.get(Unknown Source)
+	at webDriverPractice.test.Locators.setupInitialComponents(Locators.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1063095195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063095195'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.get(Unknown Source)
+	at webDriverPractice.test.Locators.setupInitialComponents(Locators.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>webDriverPractice.test.Locators@645aa696</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0017ReadExcelData.readData()'><b>readData</b><br>Test class: webDriverPractice.test.R0017ReadExcelData</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace142253266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace142253266'><pre>java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>webDriverPractice.test.R0017ReadExcelData@48075da3</td></tr>
+<tr>
+<td title='webDriverPractice.test.R0024ChromeDevTool.testGeoLocation()'><b>testGeoLocation</b><br>Test class: webDriverPractice.test.R0024ChromeDevTool</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3e743c093b6fde2e7858e6c5ce66b03, clickElement {id=9EBC67DE5AC17F757C2B24FBA539D7E9_element_137}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50442/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3e743c093b6fde2e7858e6c5ce66b03)] -&gt; xpath: //span[text()=&apos;netflix.com&apos;]]
+Session ID: c3e743c093b6fde2e7858e6c5ce66b03
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at webDriverPractice.test.R0024ChromeDevTool.testGeoLocation(R0024ChromeDevTool.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1333359824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1333359824'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3e743c093b6fde2e7858e6c5ce66b03, clickElement {id=9EBC67DE5AC17F757C2B24FBA539D7E9_element_137}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50442/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3e743c093b6fde2e7858e6c5ce66b03)] -&gt; xpath: //span[text()=&apos;netflix.com&apos;]]
+Session ID: c3e743c093b6fde2e7858e6c5ce66b03
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at webDriverPractice.test.R0024ChromeDevTool.testGeoLocation(R0024ChromeDevTool.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>21</td>
+<td>webDriverPractice.test.R0024ChromeDevTool@273444fe</td></tr>
 </table><p>
 </body>
 </html>

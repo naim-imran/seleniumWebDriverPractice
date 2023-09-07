@@ -1,50 +1,641 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="8" passed="2" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="54" passed="46" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-10T18:18:52 EDT" name="WebDriverTest" finished-at="2023-07-10T18:23:21 EDT" duration-ms="268837">
+  <suite started-at="2023-09-06T22:46:00 EDT" name="WebDriverTest" finished-at="2023-09-06T22:56:31 EDT" duration-ms="631166">
     <groups>
     </groups>
-    <test started-at="2023-07-10T18:18:52 EDT" name="Test" finished-at="2023-07-10T18:23:21 EDT" duration-ms="268837">
-      <class name="webDriverPractice.test.R0008TakeScreenShots">
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:18:52 EDT" name="setupInitialComponents" finished-at="2023-07-10T18:19:19 EDT" duration-ms="27132" status="PASS">
+    <test started-at="2023-09-06T22:46:00 EDT" name="Test" finished-at="2023-09-06T22:56:31 EDT" duration-ms="631166">
+      <class name="webDriverPractice.test.R0003CSSselector">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0003CSSselector@7a35b0f5]" started-at="2023-09-06T22:48:10 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:19 EDT" duration-ms="8999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="selenium4testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:19:19 EDT" name="selenium4testTakeScreenShot" description="R0008-TC01 take screenShot of an webElement" finished-at="2023-07-10T18:19:23 EDT" duration-ms="3284" status="PASS">
+        <test-method signature="testCssSelectorWithPartialText()[pri:0, instance:webDriverPractice.test.R0003CSSselector@7a35b0f5]" started-at="2023-09-06T22:48:19 EDT" name="testCssSelectorWithPartialText" description="TC015 locate &quot;search&quot; using partial text of an attribute value using regular expression by CssSelector" finished-at="2023-09-06T22:48:20 EDT" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selenium4testTakeScreenShot -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:19:23 EDT" name="quitBrowser" finished-at="2023-07-10T18:19:40 EDT" duration-ms="17185" status="PASS">
+        </test-method> <!-- testCssSelectorWithPartialText -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0003CSSselector@7a35b0f5]" started-at="2023-09-06T22:48:20 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:24 EDT" duration-ms="3863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:19:40 EDT" name="setupInitialComponents" finished-at="2023-07-10T18:20:07 EDT" duration-ms="27399" status="PASS">
+      </class> <!-- webDriverPractice.test.R0003CSSselector -->
+      <class name="webDriverPractice.test.R0018checkBoxHandling">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0018checkBoxHandling@8458f04]" started-at="2023-09-06T22:47:31 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:47:47 EDT" duration-ms="15952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupInitialComponents -->
-        <test-method signature="testTakeScreenShot()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:20:07 EDT" name="testTakeScreenShot" description="R0008-TC01 take screenShot of ebay Home page" finished-at="2023-07-10T18:20:19 EDT" duration-ms="11481" status="PASS">
+        <test-method signature="testCheckBox()[pri:0, instance:webDriverPractice.test.R0018checkBoxHandling@8458f04]" started-at="2023-09-06T22:47:47 EDT" name="testCheckBox" description="TC-001 check the correctness of filter check box" finished-at="2023-09-06T22:48:04 EDT" duration-ms="16643" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTakeScreenShot -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0008TakeScreenShots@6574a52c]" started-at="2023-07-10T18:20:19 EDT" name="quitBrowser" finished-at="2023-07-10T18:20:22 EDT" duration-ms="3022" status="PASS">
+        </test-method> <!-- testCheckBox -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0018checkBoxHandling@8458f04]" started-at="2023-09-06T22:48:04 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:09 EDT" duration-ms="5683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- webDriverPractice.test.R0008TakeScreenShots -->
-      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
-        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:18:52 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-10T18:20:08 EDT" duration-ms="76271" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0018checkBoxHandling@8458f04]" started-at="2023-09-06T22:48:09 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:20 EDT" duration-ms="10505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testRadioButton()[pri:0, instance:webDriverPractice.test.R0018checkBoxHandling@8458f04]" started-at="2023-09-06T22:48:20 EDT" name="testRadioButton" description="TC-002 check the correctness of Radio button" finished-at="2023-09-06T22:48:44 EDT" duration-ms="24016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButton -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0018checkBoxHandling@8458f04]" started-at="2023-09-06T22:48:44 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:48 EDT" duration-ms="4439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0018checkBoxHandling -->
+      <class name="webDriverPractice.test.ParameterizationWithJsonFile">
+        <test-method signature="printJsonData()[pri:0, instance:webDriverPractice.test.ParameterizationWithJsonFile@28261e8e]" started-at="2023-09-06T22:46:57 EDT" name="printJsonData" finished-at="2023-09-06T22:46:58 EDT" duration-ms="621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printJsonData -->
+      </class> <!-- webDriverPractice.test.ParameterizationWithJsonFile -->
+      <class name="webDriverPractice.test.R0017ReadExcelData">
+        <test-method signature="readData()[pri:0, instance:webDriverPractice.test.R0017ReadExcelData@48075da3]" started-at="2023-09-06T22:46:58 EDT" name="readData" finished-at="2023-09-06T22:46:58 EDT" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [true] but found [false]]]>
+              <![CDATA[C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:webDriverPractice.test.R0017ReadExcelData@48075da3]" started-at="2023-09-06T22:46:58 EDT" name="setup" finished-at="2023-09-06T22:46:58 EDT" duration-ms="0" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\naimn\DEV\IDE\eclipse\seleniumWebDriverPractice\src\main\java\webDriverPractice\initialization\Book1.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at webDriverPractice.test.R0017ReadExcelData.setup(R0017ReadExcelData.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- webDriverPractice.test.R0017ReadExcelData -->
+      <class name="webDriverPractice.test.R0004DropDown">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0004DropDown@606e4010]" started-at="2023-09-06T22:48:24 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:32 EDT" duration-ms="8624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testDropdownUsingSelectClass()[pri:0, instance:webDriverPractice.test.R0004DropDown@606e4010]" started-at="2023-09-06T22:48:32 EDT" name="testDropdownUsingSelectClass" description="R0004-TC001 select &quot;Cell Phones &amp; Accessories&quot; from Select  Dropdown using Select class" finished-at="2023-09-06T22:48:47 EDT" duration-ms="14442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdownUsingSelectClass -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0004DropDown@606e4010]" started-at="2023-09-06T22:48:47 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:52 EDT" duration-ms="5500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0004DropDown@606e4010]" started-at="2023-09-06T22:48:52 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:04 EDT" duration-ms="12349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testDynamicDropDownList()[pri:0, instance:webDriverPractice.test.R0004DropDown@606e4010]" started-at="2023-09-06T22:49:04 EDT" name="testDynamicDropDownList" description="A004-TC002 test &quot;Search Box&quot; with auto suggestive dropdown" finished-at="2023-09-06T22:49:08 EDT" duration-ms="3909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicDropDownList -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0004DropDown@606e4010]" started-at="2023-09-06T22:49:08 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:20 EDT" duration-ms="11972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0004DropDown -->
+      <class name="webDriverPractice.test.R0012SecurityCertification">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:00 EDT" name="initialize" finished-at="2023-09-06T22:46:17 EDT" duration-ms="16693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="devToolsTest()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:17 EDT" name="devToolsTest" description="validate the SSL certification using chrome DecTool" finished-at="2023-09-06T22:46:26 EDT" duration-ms="9062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- devToolsTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:26 EDT" name="quitBrowser" finished-at="2023-09-06T22:46:37 EDT" duration-ms="10879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:37 EDT" name="initialize" finished-at="2023-09-06T22:46:45 EDT" duration-ms="8630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="securityCertificates()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:45 EDT" name="securityCertificates" description="validate the SSL certification using chromeOptions class" finished-at="2023-09-06T22:46:46 EDT" duration-ms="1234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- securityCertificates -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:46 EDT" name="quitBrowser" finished-at="2023-09-06T22:46:57 EDT" duration-ms="10477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:46:57 EDT" name="initialize" finished-at="2023-09-06T22:47:01 EDT" duration-ms="3657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testThreadSafeDriver()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:47:01 EDT" name="testThreadSafeDriver" finished-at="2023-09-06T22:47:13 EDT" duration-ms="12001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThreadSafeDriver -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0012SecurityCertification@6caf0677]" started-at="2023-09-06T22:47:13 EDT" name="quitBrowser" finished-at="2023-09-06T22:47:28 EDT" duration-ms="15400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0012SecurityCertification -->
+      <class name="webDriverPractice.test.R0009Synchronization">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:48:48 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:54 EDT" duration-ms="5806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testFluentWait()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:48:54 EDT" name="testFluentWait" description="R0009-TC003 wait for 20 seconds at interval of 3 seconds to locate &quot;Get Your Things&quot; link button" finished-at="2023-09-06T22:49:03 EDT" duration-ms="9353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFluentWait -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:49:03 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:08 EDT" duration-ms="5082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:49:08 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:21 EDT" duration-ms="12898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testImplicitlyWait()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:49:21 EDT" name="testImplicitlyWait" description="R0009-TC001 set global wait time using implicitlyWait()" finished-at="2023-09-06T22:49:21 EDT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testImplicitlyWait -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:49:21 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:29 EDT" duration-ms="7710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:49:29 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:35 EDT" duration-ms="5821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testWebDriverWait()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:49:35 EDT" name="testWebDriverWait" description="R0009-TC002 wait 10 seconds for text &quot;Introducing watches expert verification&quot; using WebDriverWait()" finished-at="2023-09-06T22:51:53 EDT" duration-ms="137817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebDriverWait -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0009Synchronization@5b218417]" started-at="2023-09-06T22:51:53 EDT" name="quitBrowser" finished-at="2023-09-06T22:51:58 EDT" duration-ms="4811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0009Synchronization -->
+      <class name="webDriverPractice.test.R0007TabAndWindow">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0007TabAndWindow@350aac89]" started-at="2023-09-06T22:47:53 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:02 EDT" duration-ms="8877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testChildWindowHandle()[pri:0, instance:webDriverPractice.test.R0007TabAndWindow@350aac89]" started-at="2023-09-06T22:48:02 EDT" name="testChildWindowHandle" description="R0007-TC01 Open &quot;Help &amp; Contacts&quot; in new window" finished-at="2023-09-06T22:48:16 EDT" duration-ms="14449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChildWindowHandle -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0007TabAndWindow@350aac89]" started-at="2023-09-06T22:48:16 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:22 EDT" duration-ms="5942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0007TabAndWindow -->
+      <class name="webDriverPractice.test.R0013PropertiesClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webDriverPractice.test.R0013PropertiesClass@5e2c3d18]" started-at="2023-09-06T22:46:58 EDT" name="setup" finished-at="2023-09-06T22:46:58 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="propertiesFileTest()[pri:0, instance:webDriverPractice.test.R0013PropertiesClass@5e2c3d18]" started-at="2023-09-06T22:46:58 EDT" name="propertiesFileTest" finished-at="2023-09-06T22:46:58 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertiesFileTest -->
+      </class> <!-- webDriverPractice.test.R0013PropertiesClass -->
+      <class name="webDriverPractice.test.Locators">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:00 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:46:17 EDT" duration-ms="17564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="className_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:17 EDT" name="className_LocatorTest" description="TC006 click on search button using className locator" finished-at="2023-09-06T22:46:32 EDT" duration-ms="14850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- className_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:32 EDT" name="quitBrowser" finished-at="2023-09-06T22:46:36 EDT" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:36 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:46:45 EDT" duration-ms="8851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="cssSelector_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:45 EDT" name="cssSelector_LocatorTest" description="TC005 type &quot;mobile&quot; in search textbox by cssSelector" finished-at="2023-09-06T22:46:48 EDT" duration-ms="2213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cssSelector_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:48 EDT" name="quitBrowser" finished-at="2023-09-06T22:46:52 EDT" duration-ms="4807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:46:52 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:47:12 EDT" duration-ms="19175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="id_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:47:12 EDT" name="id_LocatorTest" description="TC001 locate ebay logo by ID" finished-at="2023-09-06T22:47:12 EDT" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- id_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:47:12 EDT" name="quitBrowser" finished-at="2023-09-06T22:47:18 EDT" duration-ms="6256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:47:18 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:47:30 EDT" duration-ms="11951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="linkText_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:47:30 EDT" name="linkText_LocatorTest" description="TC007 click on Electronics link button using linkTest locator" finished-at="2023-09-06T22:47:52 EDT" duration-ms="21914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkText_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:47:52 EDT" name="quitBrowser" finished-at="2023-09-06T22:47:59 EDT" duration-ms="6755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:47:59 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:06 EDT" duration-ms="7675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="name_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:06 EDT" name="name_LocatorTest" description="TC002 expand catagory filter list by using name locator" finished-at="2023-09-06T22:48:07 EDT" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:07 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:11 EDT" duration-ms="4009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:11 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:19 EDT" duration-ms="8259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="partialLinkText_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:19 EDT" name="partialLinkText_LocatorTest" description="TC008 click on &quot;Home &amp; Garden&quot; link button using partialLink locator" finished-at="2023-09-06T22:48:24 EDT" duration-ms="5476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partialLinkText_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:24 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:47 EDT" duration-ms="22349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:47 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:53 EDT" duration-ms="6112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="relativeLocatorBelow()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:48:53 EDT" name="relativeLocatorBelow" description="TC010 click on &quot;Advance&quot; link below cart using relative locator below()" finished-at="2023-09-06T22:49:02 EDT" duration-ms="8806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relativeLocatorBelow -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:02 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:07 EDT" duration-ms="5593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:07 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:15 EDT" duration-ms="7930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="relativeLocator_above()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:15 EDT" name="relativeLocator_above" description="TC009 click on &quot;sign in&quot; link button using relative locator above()" finished-at="2023-09-06T22:49:20 EDT" duration-ms="4997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relativeLocator_above -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:20 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:29 EDT" duration-ms="9101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:29 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:41 EDT" duration-ms="12118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="tagName_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:41 EDT" name="tagName_LocatorTest" description="TC003 print number of input tag present in the DOM by tagName" finished-at="2023-09-06T22:49:42 EDT" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tagName_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:49:42 EDT" name="quitBrowser" finished-at="2023-09-06T22:50:01 EDT" duration-ms="19692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:50:01 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:53:10 EDT" duration-ms="189118" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+at jdk.proxy2/jdk.proxy2.$Proxy14.get(Unknown Source)
+at webDriverPractice.test.Locators.setupInitialComponents(Locators.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="xpath_LocatorTest()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:53:10 EDT" name="xpath_LocatorTest" description="TC004 type &quot;laptops&quot; in search textbox by xpath" finished-at="2023-09-06T22:53:10 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e11bcfd77e5653c51c60c9b5a225fb5, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53453/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e11bcfd77e5653c51c60c9b5a225fb5
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+at jdk.proxy2/jdk.proxy2.$Proxy14.get(Unknown Source)
+at webDriverPractice.test.Locators.setupInitialComponents(Locators.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpath_LocatorTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.Locators@645aa696]" started-at="2023-09-06T22:53:10 EDT" name="quitBrowser" finished-at="2023-09-06T22:53:10 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.Locators -->
+      <class name="webDriverPractice.test.R0010ActionsClass">
+        <test-method signature="testMouseHover()[pri:1, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:50:28 EDT" name="testMouseHover" description="R0010-TC001 hover mouse on &quot;Hello, sign in, Account &amp; List&quot;" finished-at="2023-09-06T22:50:51 EDT" duration-ms="22821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMouseHover -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:50:51 EDT" name="quitBrowser" finished-at="2023-09-06T22:51:02 EDT" duration-ms="11191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="keyboardInteractionTest()[pri:2, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:51:02 EDT" name="keyboardInteractionTest" description="R0010-TC002 Type &quot;razer blade&quot; in capital in search edit box" finished-at="2023-09-06T22:51:14 EDT" duration-ms="11817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyboardInteractionTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:51:14 EDT" name="quitBrowser" finished-at="2023-09-06T22:51:25 EDT" duration-ms="11472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="TestDragNDrop()[pri:3, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:51:25 EDT" name="TestDragNDrop" description="R0010-TC003 test the drag funtionality of dragable box" finished-at="2023-09-06T22:51:30 EDT" duration-ms="5070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDragNDrop -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:51:30 EDT" name="quitBrowser" finished-at="2023-09-06T22:51:41 EDT" duration-ms="10947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="testkeyboardInteraction01()[pri:4, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:51:41 EDT" name="testkeyboardInteraction01" description="R0010-TC004 Type &quot;laptop&quot; in capital in search edit box using &quot;Keys.chord(&quot;laptop&quot;)&quot; " finished-at="2023-09-06T22:51:57 EDT" duration-ms="15707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testkeyboardInteraction01 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0010ActionsClass@2cb4893b]" started-at="2023-09-06T22:51:57 EDT" name="quitBrowser" finished-at="2023-09-06T22:52:08 EDT" duration-ms="10821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0010ActionsClass -->
+      <class name="webDriverPractice.test.RelativeXpath">
+        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:00 EDT" name="setupInitialComponent" finished-at="2023-09-06T22:46:18 EDT" duration-ms="18562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponent -->
+        <test-method signature="parentToChildTestUsingChild()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:18 EDT" name="parentToChildTestUsingChild" description="R0002-TC001 traversing from parent to child node using( child:: ) " finished-at="2023-09-06T22:46:26 EDT" duration-ms="7170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parentToChildTestUsingChild -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:26 EDT" name="quitDriver" finished-at="2023-09-06T22:46:33 EDT" duration-ms="7809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:33 EDT" name="setupInitialComponent" finished-at="2023-09-06T22:46:39 EDT" duration-ms="5133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponent -->
+        <test-method signature="parentToChildTestUsingForwardSlash()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:39 EDT" name="parentToChildTestUsingForwardSlash" description="R0002-TC002 traversing from parent to child node using( ForwardSlash ) " finished-at="2023-09-06T22:46:39 EDT" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parentToChildTestUsingForwardSlash -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:39 EDT" name="quitDriver" finished-at="2023-09-06T22:46:47 EDT" duration-ms="7920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:46:47 EDT" name="setupInitialComponent" finished-at="2023-09-06T22:47:00 EDT" duration-ms="13234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponent -->
+        <test-method signature="testUsingContainsMethodWithxpath()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:00 EDT" name="testUsingContainsMethodWithxpath" description="R0002-TC003 locating search box using partial text of an attribute value by xpath " finished-at="2023-09-06T22:47:03 EDT" duration-ms="2506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingContainsMethodWithxpath -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:03 EDT" name="quitDriver" finished-at="2023-09-06T22:47:09 EDT" duration-ms="6345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:09 EDT" name="setupInitialComponent" finished-at="2023-09-06T22:47:21 EDT" duration-ms="11588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponent -->
+        <test-method signature="testUsingFollowingsibkingByXpath()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:21 EDT" name="testUsingFollowingsibkingByXpath" description="R0002-TC005 locate &quot;Shop by catagory&quot; using following-sibling:: concept by xpath" finished-at="2023-09-06T22:47:22 EDT" duration-ms="1556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsingFollowingsibkingByXpath -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:22 EDT" name="quitDriver" finished-at="2023-09-06T22:47:29 EDT" duration-ms="6868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:29 EDT" name="setupInitialComponent" finished-at="2023-09-06T22:47:40 EDT" duration-ms="11014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponent -->
+        <test-method retried="true" signature="testUsingParentKeywordByXpath()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:40 EDT" name="testUsingParentKeywordByXpath" description="R0002-TC006 locate &quot; Motor &quot; link using parent:: concept by xpath" finished-at="2023-09-06T22:47:52 EDT" duration-ms="12053" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='hl-cat-nav__expander']/parent::li[@class='hl-cat-nav__js-tab']/child::a[@href='https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334']"}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be32028c69dec56f33433564014114d0, findElement {using=xpath, value=//div[@class='hl-cat-nav__expander']/parent::li[@class='hl-cat-nav__js-tab']/child::a[@href='https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51392/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be32028c69dec56f33433564014114d0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='hl-cat-nav__expander']/parent::li[@class='hl-cat-nav__js-tab']/child::a[@href='https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334']"}
+  (Session info: chrome=115.0.5790.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be32028c69dec56f33433564014114d0, findElement {using=xpath, value=//div[@class='hl-cat-nav__expander']/parent::li[@class='hl-cat-nav__js-tab']/child::a[@href='https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\naimn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51392/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be32028c69dec56f33433564014114d0
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+at jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)
+at webDriverPractice.test.RelativeXpath.testUsingParentKeywordByXpath(RelativeXpath.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,32 +653,100 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:20:09 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-10T18:20:56 EDT" duration-ms="47917" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- testUsingParentKeywordByXpath -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:52 EDT" name="quitDriver" finished-at="2023-09-06T22:47:57 EDT" duration-ms="4978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setupInitialComponent()[pri:0, instance:webDriverPractice.test.RelativeXpath@16eb3ea3]" started-at="2023-09-06T22:47:57 EDT" name="setupInitialComponent" finished-at="2023-09-06T22:48:05 EDT" duration-ms="7470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponent -->
+      </class> <!-- webDriverPractice.test.RelativeXpath -->
+      <class name="webDriverPractice.test.R0023extendReport">
+        <test-method signature="testExtentReport03()[pri:0, instance:webDriverPractice.test.R0023extendReport@5032714f]" started-at="2023-09-06T22:48:48 EDT" name="testExtentReport03" finished-at="2023-09-06T22:48:48 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtentReport03 -->
+        <test-method signature="testExtentReport()[pri:2, instance:webDriverPractice.test.R0023extendReport@5032714f]" started-at="2023-09-06T22:48:48 EDT" name="testExtentReport" finished-at="2023-09-06T22:48:48 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtentReport -->
+        <test-method signature="testExtentReport2()[pri:1, instance:webDriverPractice.test.R0023extendReport@5032714f]" started-at="2023-09-06T22:48:48 EDT" name="testExtentReport2" finished-at="2023-09-06T22:48:48 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtentReport2 -->
+        <test-method is-config="true" signature="cleanTestBed()[pri:0, instance:webDriverPractice.test.R0023extendReport@5032714f]" started-at="2023-09-06T22:56:31 EDT" name="cleanTestBed" finished-at="2023-09-06T22:56:31 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanTestBed -->
+      </class> <!-- webDriverPractice.test.R0023extendReport -->
+      <class name="webDriverPractice.test.R0024ChromeDevTool">
+        <test-method is-config="true" signature="initializeDependencies()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:00 EDT" name="initializeDependencies" finished-at="2023-09-06T22:46:04 EDT" duration-ms="4237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDependencies -->
+        <test-method signature="openBrowserInMobileView()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:04 EDT" name="openBrowserInMobileView" finished-at="2023-09-06T22:46:09 EDT" duration-ms="4447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserInMobileView -->
+        <test-method is-config="true" signature="closeBrowserInstance()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:09 EDT" name="closeBrowserInstance" finished-at="2023-09-06T22:46:14 EDT" duration-ms="5018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserInstance -->
+        <test-method is-config="true" signature="initializeDependencies()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:14 EDT" name="initializeDependencies" finished-at="2023-09-06T22:46:16 EDT" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDependencies -->
+        <test-method retried="true" signature="testGeoLocation()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:16 EDT" name="testGeoLocation" finished-at="2023-09-06T22:46:38 EDT" duration-ms="21599" status="SKIP">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [true] but found [false],
-expected [true] but found [false]]]>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.141)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3e743c093b6fde2e7858e6c5ce66b03, clickElement {id=9EBC67DE5AC17F757C2B24FBA539D7E9_element_137}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50442/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3e743c093b6fde2e7858e6c5ce66b03)] -> xpath: //span[text()='netflix.com']]
+Session ID: c3e743c093b6fde2e7858e6c5ce66b03]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false],
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3e743c093b6fde2e7858e6c5ce66b03, clickElement {id=9EBC67DE5AC17F757C2B24FBA539D7E9_element_137}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50442/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3e743c093b6fde2e7858e6c5ce66b03)] -> xpath: //span[text()='netflix.com']]
+Session ID: c3e743c093b6fde2e7858e6c5ce66b03
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at webDriverPractice.test.R0024ChromeDevTool.testGeoLocation(R0024ChromeDevTool.java:70)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -97,34 +756,133 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method retried="true" signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:20:56 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-07-10T18:21:49 EDT" duration-ms="52898" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- testGeoLocation -->
+        <test-method is-config="true" signature="closeBrowserInstance()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:38 EDT" name="closeBrowserInstance" finished-at="2023-09-06T22:46:43 EDT" duration-ms="5042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserInstance -->
+        <test-method is-config="true" signature="initializeDependencies()[pri:0, instance:webDriverPractice.test.R0024ChromeDevTool@273444fe]" started-at="2023-09-06T22:46:43 EDT" name="initializeDependencies" finished-at="2023-09-06T22:46:45 EDT" duration-ms="2815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDependencies -->
+      </class> <!-- webDriverPractice.test.R0024ChromeDevTool -->
+      <class name="webDriverPractice.test.TakeScreenShots">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.TakeScreenShots@413d1baf]" started-at="2023-09-06T22:46:58 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:47:04 EDT" duration-ms="5535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="selenium4testTakeScreenShot()[pri:0, instance:webDriverPractice.test.TakeScreenShots@413d1baf]" started-at="2023-09-06T22:47:04 EDT" name="selenium4testTakeScreenShot" description="R0008-TC01 take screenShot of an webElement" finished-at="2023-09-06T22:47:04 EDT" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selenium4testTakeScreenShot -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.TakeScreenShots@413d1baf]" started-at="2023-09-06T22:47:04 EDT" name="quitBrowser" finished-at="2023-09-06T22:47:17 EDT" duration-ms="12545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.TakeScreenShots@413d1baf]" started-at="2023-09-06T22:47:17 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:47:25 EDT" duration-ms="7512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testTakeScreenShot()[pri:0, instance:webDriverPractice.test.TakeScreenShots@413d1baf]" started-at="2023-09-06T22:47:25 EDT" name="testTakeScreenShot" description="R0008-TC01 take screenShot of ebay Home page" finished-at="2023-09-06T22:47:28 EDT" duration-ms="3408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTakeScreenShot -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.TakeScreenShots@413d1baf]" started-at="2023-09-06T22:47:28 EDT" name="quitBrowser" finished-at="2023-09-06T22:47:31 EDT" duration-ms="3031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.TakeScreenShots -->
+      <class name="webDriverPractice.test.DrawBorderAroundElement">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.DrawBorderAroundElement@17f9d882]" started-at="2023-09-06T22:48:22 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:48:36 EDT" duration-ms="13944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testDrawBorder()[pri:0, instance:webDriverPractice.test.DrawBorderAroundElement@17f9d882]" started-at="2023-09-06T22:48:36 EDT" name="testDrawBorder" description="R0006-TC001 draw border around the &quot;Search box&quot;" finished-at="2023-09-06T22:48:48 EDT" duration-ms="12053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDrawBorder -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.DrawBorderAroundElement@17f9d882]" started-at="2023-09-06T22:48:48 EDT" name="quitBrowser" finished-at="2023-09-06T22:48:51 EDT" duration-ms="3042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.DrawBorderAroundElement -->
+      <class name="webDriverPractice.test.R0015WebTableHandling">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0015WebTableHandling@75437611]" started-at="2023-09-06T22:49:20 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:44 EDT" duration-ms="23177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testdynamicWebTable()[pri:0, instance:webDriverPractice.test.R0015WebTableHandling@75437611]" started-at="2023-09-06T22:49:44 EDT" name="testdynamicWebTable" description="R0015-TC001 get the data from table01" finished-at="2023-09-06T22:49:44 EDT" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdynamicWebTable -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0015WebTableHandling@75437611]" started-at="2023-09-06T22:49:44 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:56 EDT" duration-ms="11678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0015WebTableHandling -->
+      <class name="webDriverPractice.test.ThreadSafeDriver">
+        <test-method signature="testThreadSafeDriver()[pri:0, instance:webDriverPractice.test.ThreadSafeDriver@33bc72d1]" started-at="2023-09-06T22:49:08 EDT" name="testThreadSafeDriver" finished-at="2023-09-06T22:49:21 EDT" duration-ms="13230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThreadSafeDriver -->
+      </class> <!-- webDriverPractice.test.ThreadSafeDriver -->
+      <class name="webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling@cc43f62]" started-at="2023-09-06T22:49:21 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:49:44 EDT" duration-ms="22923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method retried="true" signature="testDynamicCalendar()[pri:1, instance:webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling@cc43f62]" started-at="2023-09-06T22:49:44 EDT" name="testDynamicCalendar" description="Select a date from calender" finished-at="2023-09-06T22:49:55 EDT" duration-ms="11040" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [true] but found [false],
-expected [true] but found [false],
-expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='d1-btn']"}
+  (Session info: chrome=117.0.5938.48)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9017d97355463000bc337a712804e56c, findElement {using=xpath, value=//button[@id='d1-btn']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.48, chrome: {chromedriverVersion: 117.0.5938.48 (bde8a58d4100..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53009/devtoo..., se:cdpVersion: 117.0.5938.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9017d97355463000bc337a712804e56c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false],
-expected [true] but found [false],
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at webDriverPractice.test.R0011BrokenLinkVerification.testBrokenListUsingHttpsURLConnection(R0011BrokenLinkVerification.java:118)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='d1-btn']"}
+  (Session info: chrome=117.0.5938.48)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9017d97355463000bc337a712804e56c, findElement {using=xpath, value=//button[@id='d1-btn']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.48, chrome: {chromedriverVersion: 117.0.5938.48 (bde8a58d4100..., userDataDir: C:\Users\naimn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53009/devtoo..., se:cdpVersion: 117.0.5938.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9017d97355463000bc337a712804e56c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.pickDateExpediaCalender(R0016CalederHandling.java:18)
+at webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling.testDynamicCalendar(R0016CalederHandling.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -134,11 +892,117 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicCalendar -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling@cc43f62]" started-at="2023-09-06T22:49:55 EDT" name="quitBrowser" finished-at="2023-09-06T22:50:05 EDT" duration-ms="9881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling@cc43f62]" started-at="2023-09-06T22:50:05 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:50:41 EDT" duration-ms="36005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+      </class> <!-- webDriverPractice.test.R0016CalederHandling$R0015_WebTableHandling -->
+      <class name="webDriverPractice.test.R0006AlertClass">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0006AlertClass@68c9133c]" started-at="2023-09-06T22:46:00 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:47:20 EDT" duration-ms="80390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="alertClassTest()[pri:0, instance:webDriverPractice.test.R0006AlertClass@68c9133c]" started-at="2023-09-06T22:47:20 EDT" name="alertClassTest" description="R0006-TC01 accept window alert" finished-at="2023-09-06T22:47:30 EDT" duration-ms="10090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertClassTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0006AlertClass@68c9133c]" started-at="2023-09-06T22:47:30 EDT" name="quitBrowser" finished-at="2023-09-06T22:47:53 EDT" duration-ms="22574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0006AlertClass -->
+      <class name="webDriverPractice.test.R0014JavaScriptExecutor">
+        <test-method is-config="true" signature="setupInitialComponents()[pri:0, instance:webDriverPractice.test.R0014JavaScriptExecutor@1c5920df]" started-at="2023-09-06T22:49:56 EDT" name="setupInitialComponents" finished-at="2023-09-06T22:50:12 EDT" duration-ms="16524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupInitialComponents -->
+        <test-method signature="testJavaScriptExecutor()[pri:1, instance:webDriverPractice.test.R0014JavaScriptExecutor@1c5920df]" started-at="2023-09-06T22:50:12 EDT" name="testJavaScriptExecutor" description="locate search box and enter laptops using javaScripptxecutor" finished-at="2023-09-06T22:50:12 EDT" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJavaScriptExecutor -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0014JavaScriptExecutor@1c5920df]" started-at="2023-09-06T22:50:12 EDT" name="quitBrowser" finished-at="2023-09-06T22:50:28 EDT" duration-ms="15637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0014JavaScriptExecutor -->
+      <class name="webDriverPractice.test.R0020FrameAndDragNDropDemo">
+        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:webDriverPractice.test.R0020FrameAndDragNDropDemo@7d0b7e3c]" started-at="2023-09-06T22:48:51 EDT" name="browserInitialization" finished-at="2023-09-06T22:49:00 EDT" duration-ms="8932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="testFrame()[pri:0, instance:webDriverPractice.test.R0020FrameAndDragNDropDemo@7d0b7e3c]" started-at="2023-09-06T22:49:00 EDT" name="testFrame" description="R0020-TC01 testing the functionality of &quot;frame&quot; concept" finished-at="2023-09-06T22:49:08 EDT" duration-ms="7684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrame -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0020FrameAndDragNDropDemo@7d0b7e3c]" started-at="2023-09-06T22:49:08 EDT" name="quitBrowser" finished-at="2023-09-06T22:49:08 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- webDriverPractice.test.R0020FrameAndDragNDropDemo -->
+      <class name="webDriverPractice.test.R0011BrokenLinkVerification">
+        <test-method signature="testBrokenListUsingHttpsURLConnection()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@18271936]" started-at="2023-09-06T22:47:28 EDT" name="testBrokenListUsingHttpsURLConnection" finished-at="2023-09-06T22:48:54 EDT" duration-ms="85871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrokenListUsingHttpsURLConnection -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@4b45a2f5]" started-at="2023-07-10T18:23:20 EDT" name="quitBrowser" finished-at="2023-07-10T18:23:21 EDT" duration-ms="1059" status="PASS">
+        <test-method signature="testThreadSafeDriver()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@18271936]" started-at="2023-09-06T22:48:54 EDT" name="testThreadSafeDriver" finished-at="2023-09-06T22:49:09 EDT" duration-ms="14964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThreadSafeDriver -->
+        <test-method signature="testBrokenLink()[pri:1, instance:webDriverPractice.test.R0011BrokenLinkVerification@18271936]" started-at="2023-09-06T22:49:09 EDT" name="testBrokenLink" description="R0011-TC01 CareFirst homepage link test" finished-at="2023-09-06T22:56:30 EDT" duration-ms="441083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrokenLink -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:webDriverPractice.test.R0011BrokenLinkVerification@18271936]" started-at="2023-09-06T22:56:30 EDT" name="quitBrowser" finished-at="2023-09-06T22:56:31 EDT" duration-ms="1016" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Thread safety error; this instance of WebDriver was constructed on thread TestNG-test=Test-3 (id 23) and is being accessed by thread main (id 1)This is not permitted and *will* cause undefined behaviour
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Thread safety error; this instance of WebDriver was constructed on thread TestNG-test=Test-3 (id 23) and is being accessed by thread main (id 1)This is not permitted and *will* cause undefined behaviour
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:85)
+at jdk.proxy2/jdk.proxy2.$Proxy14.quit(Unknown Source)
+at webDriverPractice.test.R0011BrokenLinkVerification.quitBrowser(R0011BrokenLinkVerification.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.afterRun(TestRunner.java:933)
+at org.testng.TestRunner.run(TestRunner.java:624)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

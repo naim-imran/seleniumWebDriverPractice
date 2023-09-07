@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="url" value="ebay"/>
-  <listeners>
-    <listener class-name="webDriverPractice.listeners.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
     <classes>
-      <class name="webDriverPractice.test.R0011_BrokenLinkVerification">
+      <class name="webDriverPractice.test.Locators">
         <methods>
-          <include name="testBrokenListUsingHttpsURLConnection"/>
+          <include name="name_LocatorTest"/>
+          <include name="xpath_LocatorTest"/>
+          <include name="linkText_LocatorTest"/>
+          <include name="tagName_LocatorTest"/>
           <include name="quitBrowser"/>
+          <include name="partialLinkText_LocatorTest"/>
+          <include name="setupInitialComponents"/>
+          <include name="relativeLocatorBelow"/>
+          <include name="id_LocatorTest"/>
+          <include name="relativeLocator_above"/>
         </methods>
-      </class> <!-- webDriverPractice.test.R0011_BrokenLinkVerification -->
+      </class> <!-- webDriverPractice.test.Locators -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="webDriverPractice.test.Locators">
+        <methods>
+          <include name="name_LocatorTest"/>
+          <include name="xpath_LocatorTest"/>
+          <include name="tagName_LocatorTest"/>
+          <include name="quitBrowser"/>
+          <include name="partialLinkText_LocatorTest"/>
+          <include name="relativeLocatorBelow"/>
+          <include name="setupInitialComponents"/>
+          <include name="relativeLocator_above"/>
+        </methods>
+      </class> <!-- webDriverPractice.test.Locators -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test4(failed)">
+    <classes>
+      <class name="webDriverPractice.test.Locators">
+        <methods>
+          <include name="xpath_LocatorTest"/>
+          <include name="tagName_LocatorTest"/>
+          <include name="quitBrowser"/>
+          <include name="setupInitialComponents"/>
+        </methods>
+      </class> <!-- webDriverPractice.test.Locators -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" parallel="tests" name="Test5(failed)">
+    <classes>
+      <class name="webDriverPractice.test.Locators">
+        <methods>
+          <include name="xpath_LocatorTest"/>
+          <include name="quitBrowser"/>
+          <include name="setupInitialComponents"/>
+        </methods>
+      </class> <!-- webDriverPractice.test.Locators -->
+    </classes>
+  </test> <!-- Test5(failed) -->
 </suite> <!-- Failed suite [Suite] -->

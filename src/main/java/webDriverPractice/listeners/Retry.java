@@ -12,7 +12,8 @@ public class Retry implements IRetryAnalyzer{
 	private byte max;
 	
 public Retry() {
-		max = Byte.parseByte(new InitialComponents().getConfigData().getProperty("failedTestRetry"));
+		new InitialComponents();
+		max = Byte.parseByte(InitialComponents.getConfigData().getProperty("failedTestRetry"));
 	}
 
 	@Override

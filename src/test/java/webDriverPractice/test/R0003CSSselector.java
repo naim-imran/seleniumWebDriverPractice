@@ -1,11 +1,5 @@
 package webDriverPractice.test;
 
-import org.testng.annotations.Test;
-
-import webDriverPractice.utilities.InitialComponents;
-
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -19,7 +13,7 @@ public class R0003CSSselector {
 
 	@BeforeMethod
 	public void setupInitialComponents() {
-		InitialComponents initialComponents = new InitialComponents();
+		ThreadSafeDriver initialComponents = new ThreadSafeDriver();
 		driver = initialComponents.launchBrowser();
 		driver.get("https://www.ebay.com/");
 	}

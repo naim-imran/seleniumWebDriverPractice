@@ -1,32 +1,23 @@
 package webDriverPractice.test;
 
-import org.testng.annotations.Test;
-
-import webDriverPractice.utilities.InitialComponents;
-
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.util.Date;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v104.security.Security;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class R0012SecurityCertification {
-	WebDriver driver;
-	DevTools devTools;
+public class R0012SecurityCertification extends ThreadSafeDriver{
+	private WebDriver driver;
+	
 
 	@BeforeMethod
 	public void initialize() throws InterruptedException {
 
-		InitialComponents startBrowsernew = new InitialComponents();
-		driver = startBrowsernew.launchBrowser();
+		
+		driver = launchBrowser();
 
-		devTools = ((ChromeDriver) driver).getDevTools();
+		//devTools = ((ChromeDriver) driver).getDevTools();
 		
 
 		Thread.sleep(2000);
@@ -39,8 +30,8 @@ public class R0012SecurityCertification {
 		driver.get("https://assured-id-root-ca-expired.chain-demos.digicert.com/");
 		Thread.sleep(5000);
 		System.out.println(driver.getTitle()+ " " + new Date().getTime());
-		devTools.send(Security.enable());
-		devTools.send(Security.setIgnoreCertificateErrors(true));
+		//devTools.send(org.openqa.selenium.devtools.v114.security.Security.enable());
+		//devTools.send(org.openqa.selenium.devtools.v114.security.Security.setIgnoreCertificateErrors(true));
 		
 		//accessing browser after enabling security.
 		driver.get("https://assured-id-root-ca-expired.chain-demos.digicert.com/");

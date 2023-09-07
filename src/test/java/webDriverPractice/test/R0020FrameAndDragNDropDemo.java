@@ -1,8 +1,5 @@
 package webDriverPractice.test;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -12,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class R0020FrameAndDragNDropDemo {
 	private WebDriver driver;
-	R0019ThreadSafeDriver threadSafeDriver = new R0019ThreadSafeDriver();
+	ThreadSafeDriver threadSafeDriver = new ThreadSafeDriver();
 		
 		@BeforeMethod
 		public void browserInitialization() {
@@ -41,7 +38,7 @@ public class R0020FrameAndDragNDropDemo {
 			// switching to default content
 			System.out.println(driver.switchTo().defaultContent().findElement(By.xpath("//h1[@class='entry-title']")).getText());
 			
-			threadSafeDriver.removeThreadSafeBrowser(driver);
+			threadSafeDriver.tearDownThreadSafeBrowser();
 		}	
 	
 	}
