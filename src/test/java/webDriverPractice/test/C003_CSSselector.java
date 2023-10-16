@@ -6,7 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class R0003CSSselector {
+public class C003_CSSselector {
 
 	 WebDriver driver;
 

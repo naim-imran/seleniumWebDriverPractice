@@ -17,7 +17,7 @@ public class R0017ReadExcelData {
 	@BeforeMethod
 	public void setup() throws Exception {
 		FileInputStream fs = new FileInputStream(
-				System.getProperty("user.dir") + "/src/main/java/webDriverPractice/initialization/Book1.xlsx");
+				System.getProperty("user.dir") + "\\src\\main\\java\\webDriverPractice\\utilities\\Book1.xlsx");
 		workBook = new XSSFWorkbook(fs);
 		numberOfSheets = workBook.getNumberOfSheets();
 	}

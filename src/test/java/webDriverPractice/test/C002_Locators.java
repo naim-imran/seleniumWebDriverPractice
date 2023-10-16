@@ -33,7 +33,7 @@ import org.testng.annotations.Test;
  * 		we also can find webelement by using javaScriptExecutor
  */
 
-public class Locators {
+public class C002_Locators {
 	private WebDriver driver;
 	private ThreadSafeDriver threadSafeDriver;
 
@@ -98,7 +98,7 @@ public class Locators {
 		driver.findElement(By.className("btn-prim")).click();
 	}
 
-	@Test(description = "TC007 click on Electronics link button using linkTest locator")
+	@Test(description = "TC007 click on Electronics link button using linkText locator")
 	public void linkText_LocatorTest() {
 		driver.findElement(By.linkText("Electronics")).click();
 	}
