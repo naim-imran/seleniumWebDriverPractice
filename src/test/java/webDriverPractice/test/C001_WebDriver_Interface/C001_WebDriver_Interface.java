@@ -1,4 +1,4 @@
-package webDriverPractice.test;
+package webDriverPractice.test.C001_WebDriver_Interface;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,21 +9,20 @@ public class C001_WebDriver_Interface {
 
 	// WebDriver is an Interface which extends the SearchContext Interface.
 	// under WebDriver Interface we have implemented class called RemoteWebDriver.
-	// RemoteWebDriver also implements TakeScreenshoot and JavaScriptExecutor interfaces.
+	// RemoteWebDriver also implements TakeScreenshot and JavaScriptExecutor interfaces.
 	// under RemoteWebDriver class we have classes like ChromeDriver, FirefoxDriver, EdgeDriver etc.
 
-	private String browserName = "edge";
+	
 	private WebDriver driver;
+	String browserName= "chrome";
 
 	public WebDriver setupDriver() {
 
-		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
-		} else if (browserName.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
-		}
+        switch (browserName) {
+            case "chrome" -> driver = new ChromeDriver();
+            case "firefox" -> driver = new FirefoxDriver();
+            case "edge" -> driver = new EdgeDriver();
+        }
 		return driver;
 	}
 }

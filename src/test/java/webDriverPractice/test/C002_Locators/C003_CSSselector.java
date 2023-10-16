@@ -1,10 +1,11 @@
-package webDriverPractice.test;
+package webDriverPractice.test.C002_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import webDriverPractice.test.ThreadSafeDriver;
 
 public class C003_CSSselector {
 
